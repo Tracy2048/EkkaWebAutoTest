@@ -9,10 +9,10 @@ namespace EkkaWebAutoTest.Pages.LoginPage
 {
     public partial class LoginPage
     {
-        public void AssertLoginValidation()
+        public void AssertLoginSuccess()
         {
-            var alertText = _driver.FindElement(By.XPath("//div[@class='swal2-html-container']")).Text;
-            Assert.AreEqual("Đăng nhập thành công.", alertText);
+            Assert.That(Message.Text, Is.EqualTo("Đăng nhập thành công."));
+            Thread.Sleep(1500);
         }
     }
 }

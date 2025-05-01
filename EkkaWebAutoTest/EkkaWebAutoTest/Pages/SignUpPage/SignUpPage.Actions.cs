@@ -6,32 +6,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EkkaWebAutoTest.Pages.LoginPage
+namespace EkkaWebAutoTest.Pages.SignUpPage
 {
-    public partial class LoginPage
+    public partial class SignUpPage
     {
         private IWebDriver _driver;
-        public string Url => "http://localhost/ecommerce/login";
-        public LoginPage(IWebDriver driver) => _driver = driver;
+        public string Url => "http://localhost/ecommerce/signup";
+        public SignUpPage(IWebDriver driver) => _driver = driver;
         public void Open()
         {
             _driver.Navigate().GoToUrl(Url);
         }
-
-        public void Login(string email, string password)
+        public void SignUp(string name, string email, string password)
         {
+            NameTextBox.Clear();
+            NameTextBox.SendKeys(name);
             EmailTextBox.Clear();
             EmailTextBox.SendKeys(email);
             PasswordTextBox.Clear();
             PasswordTextBox.SendKeys(password);
             Thread.Sleep(1500);
-            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].scrollIntoView(true);", LoginButton);
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].scrollIntoView(true);", SignUpButton);
             // Đợi cho loginButton visible & enabled
             WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(5));
-            wait.Until(driver => LoginButton.Displayed && LoginButton.Enabled);
+            wait.Until(driver => SignUpButton.Displayed && SignUpButton.Enabled);
 
             // Click bằng JavaScript
-            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", LoginButton);
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", SignUpButton);
         }
     }
 }

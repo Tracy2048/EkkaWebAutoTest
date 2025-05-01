@@ -15,8 +15,7 @@ namespace EkkaWebAutoTest.Pages.LoginPage
 
         public IWebElement LoginButton => _driver.FindElement(By.CssSelector("button.btn.btn-primary.rounded-1"));
 
-        public IWebElement EmailValidationMessage => _driver.FindElement(By.Id("swal2-title"));
+        public IWebElement Message => _driver.FindElement(By.XPath("//*[@id=\"swal2-title\"]"));
 
-        public IWebElement PasswordValidationMessage => _driver.FindElement(By.XPath("//span[@class='error'][2]"));
     }
 }

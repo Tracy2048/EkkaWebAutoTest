@@ -1,18 +1,18 @@
-﻿using EkkaWebAutoTest.Pages.LoginPage;
+﻿using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EkkaWebAutoTest.Pages.SignUpPage;
 
 namespace EkkaWebAutoTest.Tests
 {
-    public class LoginPageTests
+    public class SignUpPageTests
     {
         private IWebDriver _driver;
-        private LoginPage _loginPage;
+        private SignUpPage _signUpPage;
 
         [SetUp]
         public void Setup()
@@ -20,7 +20,7 @@ namespace EkkaWebAutoTest.Tests
             _driver = new ChromeDriver();
             _driver.Manage().Window.Maximize();
             _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
-            _loginPage = new LoginPage(_driver);
+            _signUpPage = new SignUpPage(_driver);
         }
 
         [TearDown]
@@ -30,13 +30,17 @@ namespace EkkaWebAutoTest.Tests
             _driver.Dispose();
         }
         [Test]
-        public void Login_Success()
+        public void SignUp_Sucess()
         {
-            _loginPage.Open();
-            _loginPage.Login("hangt7708@gmail.com", "User1234@");
-            _loginPage.AssertLoginSuccess();
+            _signUpPage.Open();
+            _signUpPage.SignUp("Hang", "user@gmail.com", "User1234@");
         }
-
-
+        [Test]
+        public void SignUp_ExistingEmail()
+        {
+            _signUpPage.Open();
+            _signUpPage.SignUp("Hang", "user@gmail.com", "User1234@");
+            _signUpPage.AssertExistingEmail();
+        }
     }
 }
