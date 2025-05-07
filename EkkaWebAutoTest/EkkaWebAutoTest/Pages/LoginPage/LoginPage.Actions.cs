@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using EkkaWebAutoTest.Constants;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,7 @@ namespace EkkaWebAutoTest.Pages.LoginPage
             EmailTextBox.SendKeys(email);
             PasswordTextBox.Clear();
             PasswordTextBox.SendKeys(password);
-            Thread.Sleep(1500);
+            Thread.Sleep(WaitTimes.Default);
             ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].scrollIntoView(true);", LoginButton);
             // Đợi cho loginButton visible & enabled
             WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(5));

@@ -10,40 +10,19 @@ namespace EkkaWebAutoTest
 {
     public class TestBase
     {
-        //public IWebDriver driver { get; set; }
+        //var elements = _driver.FindElements(By.XPath("/html/body/div[2]/header/div[1]/div/div/div[3]/div/div/ul/li[3]/a"));
+        //Console.WriteLine("Số lượng phần tử tìm thấy: " + elements.Count);
+        public void ScrollAndClickElement(IWebElement element, IWebDriver _driver)
+        {
+            // Cuộn đến phần tử
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].scrollIntoView(true);", element);
 
-        //[SetUp]
-        //public void BaseSetUp()
-        //{
-        //    driver = DriverProvider.GetChromeDriver();
-        //    driver.Manage().Window.Maximize();
-        //    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
-        //}
+            // Đợi cho phần tử hiển thị và có thể nhấp được
+            WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(5));
+            wait.Until(driver => element.Displayed && element.Enabled);
 
-        //[TearDown]
-        //public void CleanUp()
-        //{
-        //    driver.Close();
-        //    driver.Dispose();
-        //}
-        //public static void SafeClick(IWebDriver driver, IWebElement element, int timeoutInSeconds = 5)
-        //{
-        //    try
-        //    {
-        //        // Scroll đến element
-        //        ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", element);
-
-        //        // Đợi cho element thực sự clickable
-        //        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutInSeconds));
-        //        wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(element));
-
-        //        // Click
-        //        element.Click();
-        //    }
-        //    catch (WebDriverException ex)
-        //    {
-        //        throw new Exception($"SafeClick failed on element {element}. Error: {ex.Message}", ex);
-        //    }
-        //}
+            // Nhấp vào phần tử bằng JavaScript
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", element);
+        }
     }
 }

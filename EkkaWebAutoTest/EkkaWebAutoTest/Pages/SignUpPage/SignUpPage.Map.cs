@@ -17,8 +17,7 @@ namespace EkkaWebAutoTest.Pages.SignUpPage
 
         public IWebElement SignUpButton => _driver.FindElement(By.XPath("//*[@id=\"btn_ele\"]"));
 
-        public IWebElement EmailValidationMessage => _driver.FindElement(By.XPath("//*[@id=\"swal2-title\"]"));
+        public IWebElement Message => _driver.FindElement(By.XPath("//*[@id=\"swal2-title\"]"));
 
-        public IWebElement PasswordValidationMessage => _driver.FindElement(By.XPath("//span[@class='error'][2]"));
     }
 }
