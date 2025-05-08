@@ -3,48 +3,72 @@
   "WorkspaceRootPath": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4594BE7F-B0DF-428F-90E3-2EA29D6998F7}|EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest.ui\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4594BE7F-B0DF-428F-90E3-2EA29D6998F7}|EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj|solutionrelative:ekkawebautotest.ui\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\tests\\accounttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\tests\\accounttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4594BE7F-B0DF-428F-90E3-2EA29D6998F7}|EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest.ui\\ekkawebautotest.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4594BE7F-B0DF-428F-90E3-2EA29D6998F7}|EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj|solutionrelative:ekkawebautotest.ui\\ekkawebautotest.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\tests\\logouttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\tests\\logouttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\homepage\\homepage.map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\homepage\\homepage.map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\accountpage\\accountpage.actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\accountpage\\accountpage.actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\loginpage\\loginpage.assertions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\loginpage\\loginpage.assertions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\loginpage\\loginpage.actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\loginpage\\loginpage.actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\loginpage\\loginpage.map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\loginpage\\loginpage.map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\homepage\\homepage.actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\homepage\\homepage.actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\tests\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\tests\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\accountpage\\accountpage.assertions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\accountpage\\accountpage.assertions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\accountpage\\accountpage.map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\accountpage\\accountpage.map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\tests\\logouttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\tests\\logouttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\constants\\waittimes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\constants\\waittimes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\loginpage\\loginpage.actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\loginpage\\loginpage.actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\tests\\signuptests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\tests\\signuptests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\loginpage\\loginpage.map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\loginpage\\loginpage.map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\testbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\testbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\homepage\\homepage.map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\homepage\\homepage.map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\homepage\\homepage.assertions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\homepage\\homepage.assertions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\homepage\\homepage.actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\homepage\\homepage.actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4594BE7F-B0DF-428F-90E3-2EA29D6998F7}|EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest.ui\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4594BE7F-B0DF-428F-90E3-2EA29D6998F7}|EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj|solutionrelative:ekkawebautotest.ui\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4594BE7F-B0DF-428F-90E3-2EA29D6998F7}|EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest.ui\\ekkawebautotest.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4594BE7F-B0DF-428F-90E3-2EA29D6998F7}|EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj|solutionrelative:ekkawebautotest.ui\\ekkawebautotest.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\signuppage\\signuppage.assertions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\pages\\signuppage\\signuppage.map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\pages\\signuppage\\signuppage.map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\constants\\waittimes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|solutionrelative:ekkawebautotest\\constants\\waittimes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D22284E-AC8C-4B7B-A132-9A74F6FE9222}|EkkaWebAutoTest\\EkkaWebAutoTest.csproj|d:\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest\\ekkawebautotest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -86,24 +106,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "AccountPage.Assertions.cs",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\AccountPage\\AccountPage.Assertions.cs",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\AccountPage\\AccountPage.Assertions.cs",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\AccountPage\\AccountPage.Assertions.cs",
+              "RelativeToolTip": "EkkaWebAutoTest\\Pages\\AccountPage\\AccountPage.Assertions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIAwwA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T15:32:03.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "LogoutTests.cs",
               "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Tests\\LogoutTests.cs",
               "RelativeDocumentMoniker": "EkkaWebAutoTest\\Tests\\LogoutTests.cs",
               "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Tests\\LogoutTests.cs",
               "RelativeToolTip": "EkkaWebAutoTest\\Tests\\LogoutTests.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAawCYAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwDQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T15:07:32.071Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "AccountPage.Actions.cs",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\AccountPage\\AccountPage.Actions.cs",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\AccountPage\\AccountPage.Actions.cs",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\AccountPage\\AccountPage.Actions.cs",
+              "RelativeToolTip": "EkkaWebAutoTest\\Pages\\AccountPage\\AccountPage.Actions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T15:31:20.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountTests.cs",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Tests\\AccountTests.cs",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Tests\\AccountTests.cs",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Tests\\AccountTests.cs",
+              "RelativeToolTip": "EkkaWebAutoTest\\Tests\\AccountTests.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwBAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T15:29:31.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginPage.Assertions.cs",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Assertions.cs",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Assertions.cs",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Assertions.cs",
+              "RelativeToolTip": "EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Assertions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T06:51:02.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginTests.cs",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Tests\\LoginTests.cs",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Tests\\LoginTests.cs",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Tests\\LoginTests.cs",
+              "RelativeToolTip": "EkkaWebAutoTest\\Tests\\LoginTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T06:43:54.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountPage.Map.cs",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\AccountPage\\AccountPage.Map.cs",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\AccountPage\\AccountPage.Map.cs",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\AccountPage\\AccountPage.Map.cs",
+              "RelativeToolTip": "EkkaWebAutoTest\\Pages\\AccountPage\\AccountPage.Map.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T15:31:37.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WaitTimes.cs",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Constants\\WaitTimes.cs",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Constants\\WaitTimes.cs",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Constants\\WaitTimes.cs",
+              "RelativeToolTip": "EkkaWebAutoTest\\Constants\\WaitTimes.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:04:26.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginPage.Actions.cs",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Actions.cs",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Actions.cs",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Actions.cs",
+              "RelativeToolTip": "EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Actions.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAApwBsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T06:50:14.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SignUpTests.cs",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Tests\\SignUpTests.cs",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Tests\\SignUpTests.cs",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Tests\\SignUpTests.cs",
+              "RelativeToolTip": "EkkaWebAutoTest\\Tests\\SignUpTests.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T08:20:56.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "LoginPage.Map.cs",
               "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Map.cs",
               "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Map.cs",
@@ -116,111 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomePage.Map.cs",
-              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Map.cs",
-              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Map.cs",
-              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Map.cs",
-              "RelativeToolTip": "EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Map.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T14:36:40.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginPage.Assertions.cs",
-              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Assertions.cs",
-              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Assertions.cs",
-              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Assertions.cs",
-              "RelativeToolTip": "EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Assertions.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T06:51:02.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginPage.Actions.cs",
-              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Actions.cs",
-              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Actions.cs",
-              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Actions.cs",
-              "RelativeToolTip": "EkkaWebAutoTest\\Pages\\LoginPage\\LoginPage.Actions.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwBoAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T06:50:14.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EkkaWebAutoTest.UI",
-              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj",
-              "RelativeDocumentMoniker": "EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj",
-              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj",
-              "RelativeToolTip": "EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-07T14:09:46.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginView.xaml.cs",
-              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\Views\\LoginView.xaml.cs",
-              "RelativeDocumentMoniker": "EkkaWebAutoTest.UI\\Views\\LoginView.xaml.cs",
-              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\Views\\LoginView.xaml.cs",
-              "RelativeToolTip": "EkkaWebAutoTest.UI\\Views\\LoginView.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T14:22:58.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomePage.Actions.cs",
-              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Actions.cs",
-              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Actions.cs",
-              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Actions.cs",
-              "RelativeToolTip": "EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Actions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T14:36:14.05Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginTests.cs",
-              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Tests\\LoginTests.cs",
-              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Tests\\LoginTests.cs",
-              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Tests\\LoginTests.cs",
-              "RelativeToolTip": "EkkaWebAutoTest\\Tests\\LoginTests.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwDAAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T06:43:54.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SignUpTests.cs",
-              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Tests\\SignUpTests.cs",
-              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Tests\\SignUpTests.cs",
-              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Tests\\SignUpTests.cs",
-              "RelativeToolTip": "EkkaWebAutoTest\\Tests\\SignUpTests.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T08:20:56.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TestBase.cs",
               "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\TestBase.cs",
               "RelativeDocumentMoniker": "EkkaWebAutoTest\\TestBase.cs",
@@ -234,6 +267,70 @@
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "HomePage.Map.cs",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Map.cs",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Map.cs",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Map.cs",
+              "RelativeToolTip": "EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Map.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAACOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:36:40.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomePage.Assertions.cs",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Assertions.cs",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Assertions.cs",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Assertions.cs",
+              "RelativeToolTip": "EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Assertions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T15:32:41.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomePage.Actions.cs",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Actions.cs",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Actions.cs",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Actions.cs",
+              "RelativeToolTip": "EkkaWebAutoTest\\Pages\\HomePage\\HomePage.Actions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:36:14.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EkkaWebAutoTest.UI.csproj",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj",
+              "RelativeToolTip": "EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-07T14:09:46.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginView.xaml.cs",
+              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\Views\\LoginView.xaml.cs",
+              "RelativeDocumentMoniker": "EkkaWebAutoTest.UI\\Views\\LoginView.xaml.cs",
+              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\Views\\LoginView.xaml.cs",
+              "RelativeToolTip": "EkkaWebAutoTest.UI\\Views\\LoginView.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwCIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:22:58.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "SignUpPage.Actions.cs",
               "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\SignUpPage\\SignUpPage.Actions.cs",
               "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\SignUpPage\\SignUpPage.Actions.cs",
@@ -241,12 +338,11 @@
               "RelativeToolTip": "EkkaWebAutoTest\\Pages\\SignUpPage\\SignUpPage.Actions.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T08:16:34.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T08:16:34.744Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "SignUpPage.Assertions.cs",
               "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\SignUpPage\\SignUpPage.Assertions.cs",
               "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\SignUpPage\\SignUpPage.Assertions.cs",
@@ -254,12 +350,11 @@
               "RelativeToolTip": "EkkaWebAutoTest\\Pages\\SignUpPage\\SignUpPage.Assertions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T16:38:40.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T16:38:40.634Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "SignUpPage.Map.cs",
               "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Pages\\SignUpPage\\SignUpPage.Map.cs",
               "RelativeDocumentMoniker": "EkkaWebAutoTest\\Pages\\SignUpPage\\SignUpPage.Map.cs",
@@ -267,50 +362,34 @@
               "RelativeToolTip": "EkkaWebAutoTest\\Pages\\SignUpPage\\SignUpPage.Map.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T08:18:57.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T08:18:57.738Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "WaitTimes.cs",
-              "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Constants\\WaitTimes.cs",
-              "RelativeDocumentMoniker": "EkkaWebAutoTest\\Constants\\WaitTimes.cs",
-              "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\Constants\\WaitTimes.cs",
-              "RelativeToolTip": "EkkaWebAutoTest\\Constants\\WaitTimes.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T15:04:26.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EkkaWebAutoTest",
+              "DocumentIndex": 20,
+              "Title": "EkkaWebAutoTest.csproj",
               "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.csproj",
               "RelativeDocumentMoniker": "EkkaWebAutoTest\\EkkaWebAutoTest.csproj",
               "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.csproj",
               "RelativeToolTip": "EkkaWebAutoTest\\EkkaWebAutoTest.csproj",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-07T14:23:30.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T14:23:30.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\MainWindow.xaml",
               "RelativeDocumentMoniker": "EkkaWebAutoTest.UI\\MainWindow.xaml",
               "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\MainWindow.xaml",
               "RelativeToolTip": "EkkaWebAutoTest.UI\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T14:06:54.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T14:06:54.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "EkkaWebAutoTest.UI\\MainWindow.xaml.cs",
@@ -318,20 +397,18 @@
               "RelativeToolTip": "EkkaWebAutoTest.UI\\MainWindow.xaml.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAUwB0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T14:06:53.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T14:06:53.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "LoginView.xaml",
               "DocumentMoniker": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\Views\\LoginView.xaml",
               "RelativeDocumentMoniker": "EkkaWebAutoTest.UI\\Views\\LoginView.xaml",
               "ToolTip": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\Views\\LoginView.xaml",
               "RelativeToolTip": "EkkaWebAutoTest.UI\\Views\\LoginView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T14:21:38.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T14:21:38.401Z"
             }
           ]
         }
