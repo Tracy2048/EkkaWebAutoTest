@@ -1,4 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using EkkaWebAutoTest.Constants;
+using EkkaWebAutoTest.Pages.AccountPage;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +19,14 @@ namespace EkkaWebAutoTest.Pages.HomePage
             _driver.Navigate().GoToUrl(Url);
         }
 
-        
+        public void ClickOnProduct(IWebElement element)
+        {
+            ((IJavaScriptExecutor)_driver).ExecuteScript(
+                "arguments[0].scrollIntoView({block: 'center'});", element);
+
+            Thread.Sleep(WaitTimes.Default);
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", element);
+            Thread.Sleep(WaitTimes.Default);
+        }
     }
 }

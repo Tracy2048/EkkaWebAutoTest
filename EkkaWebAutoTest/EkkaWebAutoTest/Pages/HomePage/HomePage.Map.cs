@@ -14,5 +14,18 @@ namespace EkkaWebAutoTest.Pages.HomePage
         public IWebElement AccountButton => _driver.FindElement(By.XPath("/html/body/div[2]/header/div[1]/div/div/div[3]/div/div/ul/li[1]/a"));
 
         public IWebElement LogoutButton => _driver.FindElement(By.XPath("/html/body/div[2]/header/div[1]/div/div/div[3]/div/div/ul/li[3]/a"));
+
+        public IWebElement ProductRandom
+        {
+            get
+            {
+                var elements = _driver.FindElements(By.ClassName("main-image"));
+                Random rnd = new Random();
+                int[] allowedIndexes = { 1, 2, 3 };
+                int randomIndex = allowedIndexes[rnd.Next(allowedIndexes.Length)];
+
+                return elements[randomIndex];
+            }
+        }
     }
 }
