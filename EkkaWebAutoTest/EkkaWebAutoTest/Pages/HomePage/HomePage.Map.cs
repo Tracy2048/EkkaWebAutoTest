@@ -15,6 +15,8 @@ namespace EkkaWebAutoTest.Pages.HomePage
 
         public IWebElement LogoutButton => _driver.FindElement(By.XPath("/html/body/div[2]/header/div[1]/div/div/div[3]/div/div/ul/li[3]/a"));
 
+        public IWebElement CartButton => _driver.FindElement(By.ClassName("fi-rr-shopping-bag"));
+
         public IWebElement ProductRandom
         {
             get

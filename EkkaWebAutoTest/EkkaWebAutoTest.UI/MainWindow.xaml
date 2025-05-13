@@ -20,6 +20,18 @@
                     Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
             <Button Content="Đăng xuất" Tag="LogoutView" Click="Menu_Click"
                     Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
+            <Button Content="Xem thông tin tài khoản" Tag="BatchView" Click="Menu_Click"
+                    Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
+            <Button Content="Xem chi tiết sản phẩm" Tag="BatchView" Click="Menu_Click"
+                    Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
+            <Button Content="Quản lý giỏ hàng" Tag="BatchView" Click="Menu_Click"
+                    Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
+            <Button Content="Mua hàng" Tag="BatchView" Click="Menu_Click"
+                    Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
+            <Button Content="Tìm kiếm sản phẩm" Tag="BatchView" Click="Menu_Click"
+                    Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
+            <Button Content="Xem lịch sử mua hàng" Tag="BatchView" Click="Menu_Click"
+                    Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
             <Button Content="Kiểm thử hàng loạt" Tag="BatchView" Click="Menu_Click"
                     Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
         </StackPanel>

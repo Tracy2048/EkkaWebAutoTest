@@ -58,7 +58,7 @@ namespace EkkaWebAutoTest.Tests
         public void Login_IncorrectEmail()
         {
             _loginPage.Open();
-            _loginPage.Login("user@gmail.com", "User1234@");
+            _loginPage.Login("hang@gmail.com", "User1234@");
             _loginPage.AssertIncorrectEmailOrPassword();
         }
 
@@ -66,7 +66,7 @@ namespace EkkaWebAutoTest.Tests
         public void Login_IncorrectPassword()
         {
             _loginPage.Open();
-            _loginPage.Login("hangt@gmail.com", "User123");
+            _loginPage.Login("hangt7708@gmail.com", "User@1111");
             _loginPage.AssertIncorrectEmailOrPassword();
         }
     }
