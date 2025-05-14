@@ -83,7 +83,7 @@
                 </DataGridTemplateColumn>
 
                 <!-- Kết quả mong đợi -->
-                <DataGridTemplateColumn Header="Kết quả mong đợi" Width="2.5*">
+                <DataGridTemplateColumn Header="Kết quả mong đợi" Width="2*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding ExpectedResult}" Style="{StaticResource WrappedTextStyle}" />
@@ -92,7 +92,7 @@
                 </DataGridTemplateColumn>
 
                 <!--<DataGridTextColumn Header="Kết quả" Binding="{Binding Result}" Width="1.5*"/>-->
-                <DataGridTemplateColumn Header="Kết quả" Width="*">
+                <DataGridTemplateColumn Header="Kết quả" Width="2*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Grid>

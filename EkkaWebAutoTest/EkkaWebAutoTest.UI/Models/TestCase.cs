@@ -10,6 +10,7 @@ namespace EkkaWebAutoTest.UI.Models
     {
         public string STT { get; set; }
         public string TestName { get; set; }
+        public string Precondition { get; set; }
         public string Steps { get; set; }
         public string TestData { get; set; }
         public string ExpectedResult { get; set; }

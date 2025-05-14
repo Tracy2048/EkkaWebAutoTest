@@ -28,6 +28,10 @@ namespace EkkaWebAutoTest.UI
             UserControl content = tag switch
             {
                 "LoginView" => new Views.LoginView(),
+                "SignUpView" => new Views.SignUpView(),
+                "LogoutView" => new Views.LogoutView(),
+                "AccountView" => new Views.AccountView(),
+
                 _ => null
             };
 

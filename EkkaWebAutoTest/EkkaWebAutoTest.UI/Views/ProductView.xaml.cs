@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EkkaWebAutoTest.UI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,19 @@ namespace EkkaWebAutoTest.UI.Views
     /// </summary>
     public partial class ProductView : Page
     {
+        private List<TestCase> testCases;
+
         public ProductView()
         {
             InitializeComponent();
+        }
+        private void ExecuteTest_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button button && button.Tag is TestCase testCase)
+            {
+                testCase.ExecuteAction?.Invoke(testCase); // Gọi hành động được gán riêng cho test này
+                //LoginTCsGrid.Items.Refresh();
+            }
         }
     }
 }

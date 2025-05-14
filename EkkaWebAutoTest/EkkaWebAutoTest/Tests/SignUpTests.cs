@@ -31,7 +31,7 @@ namespace EkkaWebAutoTest.Tests
         }
 
         [Test]
-        public void SignUp_Sucess()
+        public void SignUp_Success()
         {
             _signUpPage.Open();
             _signUpPage.SignUp("Hang", "user@gmail.com", "User1234@");

@@ -16,11 +16,11 @@
         <StackPanel Background="#1E2A38" Orientation="Vertical">
             <Button Content="Đăng nhập" Tag="LoginView" Click="Menu_Click"
                     Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
-            <Button Content="Đăng ký" Tag="RegisterView" Click="Menu_Click"
+            <Button Content="Đăng ký" Tag="SignUpView" Click="Menu_Click"
                     Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
             <Button Content="Đăng xuất" Tag="LogoutView" Click="Menu_Click"
                     Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
-            <Button Content="Xem thông tin tài khoản" Tag="BatchView" Click="Menu_Click"
+            <Button Content="Xem thông tin tài khoản" Tag="AccountView" Click="Menu_Click"
                     Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
             <Button Content="Xem chi tiết sản phẩm" Tag="BatchView" Click="Menu_Click"
                     Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
