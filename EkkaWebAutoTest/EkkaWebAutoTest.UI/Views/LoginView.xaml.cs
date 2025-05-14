@@ -39,7 +39,7 @@ namespace EkkaWebAutoTest.UI.Views
                 { 
                     new TestCase
                     {
-                        STT = "SU-1",
+                        STT = "LI-1",
                         TestName = "Đăng nhập thành công khi nhập các trường hợp lệ",
                         Steps = "1. Nhập Địa chỉ Email và Mật khẩu hợp lệ\n" +
                                 "2. Nhấn nút 'Đăng nhập'",
@@ -64,57 +64,7 @@ namespace EkkaWebAutoTest.UI.Views
                     },
                     new TestCase
                     {
-                        STT = "SU-2",
-                        TestName = "Đăng nhập không thành công khi không nhập Email",
-                        Steps = "1. Để trống trường Email và nhập trường Mật khẩu\n" +
-                                "2. Nhấn nút 'Đăng nhập'",
-                        TestData = "Email:\n" +
-                                   "Mật khẩu: User1234@",
-                        ExpectedResult = "2. Hiển thị thông báo lỗi \"Vui lòng không để trống email.\" ",
-                        ExecuteAction = (tc) =>
-                        {
-                            var test = new LoginTests();
-                            try
-                            {
-                                test.Setup();
-                                test.Login_EmptyEmail();
-                                test.CleanUp();
-                                tc.Result = "Pass";
-                            }
-                            catch (Exception ex)
-                            {
-                                tc.Result = $"{ex.Message}";
-                            }
-                        }
-                    },
-                    new TestCase
-                    {
-                        STT = "SU-3",
-                        TestName = "Đăng nhập không thành công khi không nhập Mật khẩu",
-                        Steps = "1. Nhập trường Email và để trống trường Mật khẩu\n" +
-                                "2. Nhấn nút 'Đăng nhập'",
-                        TestData = "Email: hangt7708@gmail.com\n" +
-                                   "Mật khẩu: ",
-                        ExpectedResult = "2. Hiển thị thông báo lỗi \"Vui lòng không để trống mật khẩu.\" ",
-                        ExecuteAction = (tc) =>
-                        {
-                            var test = new LoginTests();
-                            try
-                            {
-                                test.Setup();
-                                test.Login_EmptyPassword();
-                                test.CleanUp();
-                                tc.Result = "Pass";
-                            }
-                            catch (Exception ex)
-                            {
-                                tc.Result = $"{ex.Message}";
-                            }
-                        }
-                    },
-                    new TestCase
-                    {
-                        STT = "SU-4",
+                        STT = "LI-2",
                         TestName = "Đăng nhập không thành công khi nhập sai Email",
                         Steps = "1. Nhập sai Email và nhập Mật khẩu hợp lệ\n" +
                                 "2. Nhấn nút 'Đăng nhập'",
@@ -139,7 +89,7 @@ namespace EkkaWebAutoTest.UI.Views
                     },
                     new TestCase
                     {
-                        STT = "SU-5",
+                        STT = "LI-3",
                         TestName = "Đăng nhập không thành công khi nhập sai Mật khẩu",
                         Steps = "1. Nhập Email hợp lệ và nhập sai Mật khẩu\n" +
                                 "2. Nhấn nút 'Đăng nhập'",
@@ -162,13 +112,64 @@ namespace EkkaWebAutoTest.UI.Views
                             }
                         }
                     },
+                    new TestCase
+                    {
+                        STT = "LI-4",
+                        TestName = "Đăng nhập không thành công khi không nhập Email",
+                        Steps = "1. Để trống trường Email và nhập trường Mật khẩu\n" +
+                                "2. Nhấn nút 'Đăng nhập'",
+                        TestData = "Email:\n" +
+                                   "Mật khẩu: User1234@",
+                        ExpectedResult = "2. Hiển thị thông báo lỗi \"Vui lòng không để trống email.\" ",
+                        ExecuteAction = (tc) =>
+                        {
+                            var test = new LoginTests();
+                            try
+                            {
+                                test.Setup();
+                                test.Login_EmptyEmail();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = $"{ex.Message}";
+                            }
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "LI-5",
+                        TestName = "Đăng nhập không thành công khi không nhập Mật khẩu",
+                        Steps = "1. Nhập trường Email và để trống trường Mật khẩu\n" +
+                                "2. Nhấn nút 'Đăng nhập'",
+                        TestData = "Email: hangt7708@gmail.com\n" +
+                                   "Mật khẩu: ",
+                        ExpectedResult = "2. Hiển thị thông báo lỗi \"Vui lòng không để trống mật khẩu.\" ",
+                        ExecuteAction = (tc) =>
+                        {
+                            var test = new LoginTests();
+                            try
+                            {
+                                test.Setup();
+                                test.Login_EmptyPassword();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = $"{ex.Message}";
+                            }
+                        }
+                    },
+                    
         };
 
                 // Lưu testCases vào Application.Current
                 Application.Current.Properties["LoginTestCases"] = testCases;
             }
 
-            TestCasesGrid.ItemsSource = testCases;
+            LoginTCsGrid.ItemsSource = testCases;
 
         }
 
@@ -177,7 +178,7 @@ namespace EkkaWebAutoTest.UI.Views
             if (sender is Button button && button.Tag is TestCase testCase)
             {
                 testCase.ExecuteAction?.Invoke(testCase); // Gọi hành động được gán riêng cho test này
-                TestCasesGrid.Items.Refresh();
+                LoginTCsGrid.Items.Refresh();
             }
         }
 

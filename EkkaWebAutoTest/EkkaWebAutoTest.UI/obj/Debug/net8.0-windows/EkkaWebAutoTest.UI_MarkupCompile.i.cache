@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\App.xaml
-21727942632
+10-318818780
 384716365
-8-391512111
+161101669861
 212-1661855924
-MainWindow.xaml;Views\LoginView.xaml;
+MainWindow.xaml;Views\AccountView.xaml;Views\CartView.xaml;Views\LoginView.xaml;Views\LogoutView.xaml;Views\OrderHistoryView.xaml;Views\OrderView.xaml;Views\ProductSearchView.xaml;Views\ProductView.xaml;Views\SignUpView.xaml;
 
-True
+False
 

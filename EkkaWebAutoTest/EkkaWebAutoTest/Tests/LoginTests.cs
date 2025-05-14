@@ -1,4 +1,5 @@
 ﻿using EkkaWebAutoTest.Pages.LoginPage;
+using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
@@ -67,7 +68,7 @@ namespace EkkaWebAutoTest.Tests
         {
             _loginPage.Open();
             _loginPage.Login("hangt7708@gmail.com", "User@1111");
-            _loginPage.AssertIncorrectEmailOrPassword();
+            Assert.That(_loginPage.Message.Text, Is.EqualTo("Tài khoản hoặc mật khẩu không chính xác."));
         }
     }
 }
