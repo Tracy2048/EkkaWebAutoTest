@@ -40,9 +40,10 @@ namespace EkkaWebAutoTest.UI.Views
                         STT = "VA-1",
                         TestName = "Xem thông tin tài khoản thành công",
                         Precondition = "User đã đăng nhập",
-                        Steps = "1. Nhấn icon người dùng bên góc trái màn hình\n" +
-                                "2. Nhấn nút 'Tài khoản'",
-                        ExpectedResult = "2. Hiển thị đúng thông tin người dùng họ tên và email",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn icon người dùng bên góc trái màn hình\n" +
+                                "3. Nhấn nút 'Tài khoản'",
+                        ExpectedResult = "3. Hiển thị đúng thông tin người dùng họ tên và email",
                         ExecuteAction = (tc) =>
                         {
                             var test = new AccountTests();
@@ -61,7 +62,7 @@ namespace EkkaWebAutoTest.UI.Views
                     },
 
 
-        };
+                };
 
                 // Lưu testCases vào Application.Current
                 Application.Current.Properties["AccountTestCases"] = testCases;

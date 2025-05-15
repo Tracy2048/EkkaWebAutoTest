@@ -31,7 +31,11 @@ namespace EkkaWebAutoTest.UI
                 "SignUpView" => new Views.SignUpView(),
                 "LogoutView" => new Views.LogoutView(),
                 "AccountView" => new Views.AccountView(),
-
+                "ProductView" => new Views.ProductView(),
+                "CartView" => new Views.CartView(),
+                "OrderView" => new Views.OrderView(),
+                "ProductSearchView" => new Views.ProductSearchView(),
+                "OrderHistoryView" => new Views.OrderHistoryView(),
                 _ => null
             };
 

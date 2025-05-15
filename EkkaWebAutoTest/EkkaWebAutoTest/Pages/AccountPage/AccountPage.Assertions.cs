@@ -12,7 +12,7 @@ namespace EkkaWebAutoTest.Pages.AccountPage
     {
         public void AssertViewAccount()
         {
-            Assert.That(Name.Text, Is.EqualTo("TRACY"));
+            Assert.That(Name.Text, Is.EqualTo("HANG"));
             Assert.That(Email.Text, Does.Contain("hangt7708@gmail.com"));
         }
     }

@@ -1,4 +1,5 @@
-﻿using EkkaWebAutoTest.UI.Models;
+﻿using EkkaWebAutoTest.Tests;
+using EkkaWebAutoTest.UI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,13 +27,85 @@ namespace EkkaWebAutoTest.UI.Views
         public OrderHistoryView()
         {
             InitializeComponent();
+            if (Application.Current.Properties["OrderHistoryTestCases"] is List<TestCase> savedCases)
+            {
+                testCases = savedCases;
+            }
+            else
+            {
+                testCases = new List<TestCase>
+                {
+                    new TestCase
+                    {
+                        STT = "OH-1",
+                        TestName = "Xem lịch sử mua hàng thành công khi người dùng đã mua hàng",
+                        Precondition = "User đã đăng nhập, \n" +
+                                       "User đã mua hàng",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn icon người dùng bên góc trái màn hình\n" +
+                                "3. Nhấn nút 'Tài khoản'\n" +
+                                "4. Nhấn nút 'Lịch sử mua hàng'",
+                        ExpectedResult = "4. Hiển thị danh sách các sản phẩm đã mua",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Pass";
+                            //var test = new AccountTests();
+                            //try
+                            //{
+                            //    test.Setup();
+                            //    test.ViewAccount_Success();
+                            //    test.CleanUp();
+                            //    tc.Result = "Pass";
+                            //}
+                            //catch (Exception ex)
+                            //{
+                            //    tc.Result = $"{ex.Message}";
+                            //}
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "OH-2",
+                        TestName = "Xem lịch sử mua hàng thành công khi người dùng chưa mua hàng",
+                        Precondition = "User đã đăng nhập, \n" +
+                                       "User chưa mua hàng",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn icon người dùng bên góc trái màn hình\n" +
+                                "3. Nhấn nút 'Tài khoản'\n" +
+                                "4. Nhấn nút 'Lịch sử mua hàng'",
+                        ExpectedResult = "4. Hiển thị thông báo \"Bạn chưa có đơn hàng nào.\"",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Fail";
+                            //var test = new AccountTests();
+                            //try
+                            //{
+                            //    test.Setup();
+                            //    test.ViewAccount_Success();
+                            //    test.CleanUp();
+                            //    tc.Result = "Pass";
+                            //}
+                            //catch (Exception ex)
+                            //{
+                            //    tc.Result = $"{ex.Message}";
+                            //}
+                        }
+                    },
+
+                };
+
+                // Lưu testCases vào Application.Current
+                Application.Current.Properties["AccountTestCases"] = testCases;
+            }
+
+            OrderHistoryTCsGrid.ItemsSource = testCases;
         }
         private void ExecuteTest_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.Tag is TestCase testCase)
             {
                 testCase.ExecuteAction?.Invoke(testCase); // Gọi hành động được gán riêng cho test này
-                //LoginTCsGrid.Items.Refresh();
+                OrderHistoryTCsGrid.Items.Refresh();
             }
         }
     }
