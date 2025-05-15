@@ -37,7 +37,7 @@ namespace EkkaWebAutoTest.Tests
         }
 
         [Test]
-        public void ViewAccount()
+        public void ViewAccount_Success()
         {
             _loginPage.Open();
             _loginPage.Login("hangt7708@gmail.com", "User1234@");

@@ -1,4 +1,5 @@
-﻿using EkkaWebAutoTest.UI.Models;
+﻿using EkkaWebAutoTest.Tests;
+using EkkaWebAutoTest.UI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,13 +27,54 @@ namespace EkkaWebAutoTest.UI.Views
         public AccountView()
         {
             InitializeComponent();
+            if (Application.Current.Properties["AccountTestCases"] is List<TestCase> savedCases)
+            {
+                testCases = savedCases;
+            }
+            else
+            {
+                testCases = new List<TestCase>
+                {
+                    new TestCase
+                    {
+                        STT = "VA-1",
+                        TestName = "Xem thông tin tài khoản thành công",
+                        Precondition = "User đã đăng nhập",
+                        Steps = "1. Nhấn icon người dùng bên góc trái màn hình\n" +
+                                "2. Nhấn nút 'Tài khoản'",
+                        ExpectedResult = "2. Hiển thị đúng thông tin người dùng họ tên và email",
+                        ExecuteAction = (tc) =>
+                        {
+                            var test = new AccountTests();
+                            try
+                            {
+                                test.Setup();
+                                test.ViewAccount_Success();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = $"{ex.Message}";
+                            }
+                        }
+                    },
+
+
+        };
+
+                // Lưu testCases vào Application.Current
+                Application.Current.Properties["AccountTestCases"] = testCases;
+            }
+
+            AccountTCsGrid.ItemsSource = testCases;
         }
         private void ExecuteTest_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.Tag is TestCase testCase)
             {
                 testCase.ExecuteAction?.Invoke(testCase); // Gọi hành động được gán riêng cho test này
-                //LoginTCsGrid.Items.Refresh();
+                AccountTCsGrid.Items.Refresh();
             }
         }
     }

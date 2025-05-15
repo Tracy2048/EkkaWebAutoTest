@@ -38,7 +38,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Đăng ký" 
+        <TextBlock Text="Đăng xuất" 
      FontSize="32" 
      FontWeight="Bold" 
      Margin="0,0,0,15" 
