@@ -39,6 +39,21 @@ namespace EkkaWebAutoTest.Tests
         }
 
         [Test]
+        public void SignUp_InvalidEmailFormat()
+        {
+            _signUpPage.Open();
+            _signUpPage.SignUp("Hang", "user", "User1234@");
+            _signUpPage.AssertInvalidEmailFormat();
+        }
+
+        [Test]
+        public void SignUp_InvalidPasswordFormat()
+        {
+            _signUpPage.Open();
+            _signUpPage.SignUp("Hang", "user2@gmail.com", "User1234@");
+            _signUpPage.AssertInvalidPasswordFormat();
+        }
+        [Test]
         public void SignUp_ExistingEmail()
         {
             _signUpPage.Open();
@@ -50,7 +65,7 @@ namespace EkkaWebAutoTest.Tests
         public void SignUp_EmptyName()
         {
             _signUpPage.Open();
-            _signUpPage.SignUp(string.Empty, "user@gmail.com", "User1234@");
+            _signUpPage.SignUp(string.Empty, "hangt7708@gmail.com", "User1234@");
             _signUpPage.AssertEmptyName();
         }
 
@@ -66,7 +81,7 @@ namespace EkkaWebAutoTest.Tests
         public void SignUp_EmptyPassword()
         {
             _signUpPage.Open();
-            _signUpPage.SignUp("User", "user@gmail.com", string.Empty);
+            _signUpPage.SignUp("User", "hangt7708@gmail.com", string.Empty);
             _signUpPage.AssertEmptyPassword();
         }
     }

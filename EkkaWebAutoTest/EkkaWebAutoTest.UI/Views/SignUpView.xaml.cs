@@ -42,7 +42,7 @@ namespace EkkaWebAutoTest.UI.Views
                         Steps = "1. Nhập Họ và tên, Email và Mật khẩu hợp lệ\n" +
                                 "2. Nhấn nút 'Đăng ký'",
                         TestData = "Họ và tên: Hang\n" +
-                                   "Email: user@gmail.com\n" +
+                                   "Email: user1@gmail.com\n" +
                                    "Mật khẩu: User1234@",
                         ExpectedResult = "2. Đăng ký thành công",
                         ExecuteAction = (tc) =>
@@ -91,6 +91,61 @@ namespace EkkaWebAutoTest.UI.Views
                     new TestCase
                     {
                         STT = "SU-3",
+                        TestName = "Đăng ký không thành công khi nhập sai định dạng email",
+                        Steps = "1. Nhập sai định dạng Email\n" +
+                                "2. Nhập Họ và tên và Mật khẩu hợp lệ\n" +
+                                "3. Nhấn nút 'Đăng ký'",
+                        TestData = "Họ và tên: Hang\n" +
+                                   "Email: user\n" +
+                                   "Mật khẩu: User1234@",
+                        ExpectedResult = "3. Hiển thị thông báo lỗi \"Vui lòng nhập đúng định dạng email.\"",
+                        ExecuteAction = (tc) =>
+                        {
+                            var test = new SignUpTests();
+                            try
+                            {
+                                test.Setup();
+                                test.SignUp_InvalidEmailFormat();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = $"{ex.Message}";
+                            }
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "SU-4",
+                        TestName = "Đăng ký không thành công khi nhập mật khẩu không hợp lệ",
+                        Steps = "1. Nhập Mật khẩu không hợp lệ\n" +
+                                "2. Nhập Họ và tên và Email hợp lệ\n" +
+                                "3. Nhấn nút 'Đăng ký'",
+                        TestData = "Họ và tên: Hang\n" +
+                                   "Email: user2@gmail.com\n" +
+                                   "Mật khẩu: user123",
+                        ExpectedResult = "3. Hiển thị thông báo lỗi \"Mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ hoa, chữ thường và số.\"",
+                        ExecuteAction = (tc) =>
+                        {
+                            var test = new SignUpTests();
+                            try
+                            {
+                                test.Setup();
+                                test.SignUp_InvalidPasswordFormat();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "SU-5",
                         TestName = "Đăng ký không thành công khi không nhập Họ và tên",
                         Steps = "1. Để trống trường Họ và tên\n" +
                                 "2. Nhập Email, Mật khẩu hợp lệ\n" +
@@ -117,7 +172,7 @@ namespace EkkaWebAutoTest.UI.Views
                     },
                     new TestCase
                     {
-                        STT = "SU-4",
+                        STT = "SU-6",
                         TestName = "Đăng ký không thành công khi không nhập Email",
                         Steps = "1. Để trống trường Email\n" +
                                 "2. Nhập Họ và tên, Mật khẩu hợp lệ\n" +
@@ -144,7 +199,7 @@ namespace EkkaWebAutoTest.UI.Views
                     },
                     new TestCase
                     {
-                        STT = "SU-5",
+                        STT = "SU-7",
                         TestName = "Đăng ký không thành công khi không nhập Mật khẩu",
                         Steps = "1. Để trống trường Mật khẩu\n" +
                                 "2. Nhập Họ và tên, Email hợp lệ\n" +

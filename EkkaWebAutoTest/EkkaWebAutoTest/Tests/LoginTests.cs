@@ -40,6 +40,22 @@ namespace EkkaWebAutoTest.Tests
         }
 
         [Test]
+        public void Login_InvalidEmailFormat()
+        {
+            _loginPage.Open();
+            _loginPage.Login("hangt7708.gmail.com", "User1234@");
+            _loginPage.AssertInvalidEmailFormat();
+        }
+
+        [Test]
+        public void Login_InvalidPasswordFormat()
+        {
+            _loginPage.Open();
+            _loginPage.Login("hangt7708@gmail.com", "User1234@");
+            _loginPage.AssertInvalidPasswordFormat();
+        }
+
+        [Test]
         public void Login_EmptyEmail()
         {
             _loginPage.Open();

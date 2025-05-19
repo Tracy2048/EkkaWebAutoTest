@@ -6,6 +6,17 @@
         xmlns:local="clr-namespace:EkkaWebAutoTest.UI"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Height" Value="40"/>
+        </Style>
+    </Window.Resources>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
@@ -13,7 +24,7 @@
         </Grid.ColumnDefinitions>
 
         <!-- Menu chức năng -->
-        <StackPanel Background="#1E2A38" Orientation="Vertical">
+        <StackPanel Background="#1E2A38" Orientation="Vertical" >
             <Button Content="Đăng nhập" Tag="LoginView" Click="Menu_Click"
                     Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
             <Button Content="Đăng ký" Tag="SignUpView" Click="Menu_Click"
@@ -32,8 +43,8 @@
                     Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
             <Button Content="Xem lịch sử mua hàng" Tag="OrderHistoryView" Click="Menu_Click"
                     Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
-            <Button Content="Kiểm thử hàng loạt" Tag="BatchView" Click="Menu_Click"
-                    Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
+            <!--<Button Content="Kiểm thử hàng loạt" Tag="BatchView" Click="Menu_Click"
+                    Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>-->
         </StackPanel>
 
         <!-- Khu vực nội dung -->

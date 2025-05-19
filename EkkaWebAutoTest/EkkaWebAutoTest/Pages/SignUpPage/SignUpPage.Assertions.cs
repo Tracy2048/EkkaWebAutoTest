@@ -20,6 +20,16 @@ namespace EkkaWebAutoTest.Pages.SignUpPage
             Assert.That(Message.Text, Is.EqualTo("Email đã tồn tại vui lòng đăng nhập."));
             Thread.Sleep(WaitTimes.Default);
         }
+        public void AssertInvalidEmailFormat()
+        {
+            Assert.That(Message.Text, Is.EqualTo("Vui lòng nhập đúng định dạng email."));
+            Thread.Sleep(WaitTimes.Default);
+        }
+        public void AssertInvalidPasswordFormat()
+        {
+            Assert.That(Message.Text, Is.EqualTo("Mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ hoa, chữ thường và số."));
+            Thread.Sleep(WaitTimes.Default);
+        }
         public void AssertEmptyName()
         {
             Assert.That(Message.Text, Is.EqualTo("Vui lòng không để trống họ và tên."));

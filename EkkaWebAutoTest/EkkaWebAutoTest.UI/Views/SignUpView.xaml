@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       xmlns:sys="clr-namespace:System;assembly=mscorlib">
-    
+
     <UserControl.Resources>
         <Style TargetType="DataGridColumnHeader">
             <Setter Property="FontSize" Value="16"/>
@@ -91,7 +91,7 @@
                 </DataGridTemplateColumn>
 
                 <!--<DataGridTextColumn Header="Kết quả" Binding="{Binding Result}" Width="1.5*"/>-->
-                <DataGridTemplateColumn Header="Kết quả" Width="2*">
+                <DataGridTemplateColumn Header="Kết quả" Width="*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Grid>
@@ -109,7 +109,7 @@
                                                     <Setter Property="FontWeight" Value="Bold"/>
                                                     <Setter Property="FontSize" Value="16"/>
                                                 </DataTrigger>
-                                                <DataTrigger Binding="{Binding Result}" Value="FAIL">
+                                                <DataTrigger Binding="{Binding Result}" Value="Fail">
                                                     <Setter Property="Foreground" Value="Red"/>
                                                     <Setter Property="FontWeight" Value="Bold"/>
                                                     <Setter Property="FontSize" Value="16"/>
@@ -133,8 +133,12 @@
                 <DataGridTemplateColumn Header="Thực hiện" Width="1*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button Click="ExecuteTest_Click" Tag="{Binding}" Padding="10,5" Margin="5" Background="#2196F3" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand">
-                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <Button Click="ExecuteTest_Click" Tag="{Binding}" Width="120" Height="35"
+                                            Padding="10,5" Margin="5"
+                                            Background="#2196F3" Foreground="White"
+                                            FontWeight="Bold" BorderThickness="0" Cursor="Hand"
+                                            HorizontalAlignment="Center" VerticalAlignment="Center">    
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                     <TextBlock Text="▶" FontSize="14" Margin="0,0,5,0"/>
                                     <TextBlock Text="Thực hiện" FontSize="14"/>
                                 </StackPanel>

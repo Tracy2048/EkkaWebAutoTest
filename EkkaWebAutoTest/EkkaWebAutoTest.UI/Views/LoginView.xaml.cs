@@ -65,6 +65,59 @@ namespace EkkaWebAutoTest.UI.Views
                     new TestCase
                     {
                         STT = "LI-2",
+                        TestName = "Đăng nhập không thành công khi nhập sai định dạng email",
+                        Steps = "1. Nhập sai định dạng Email\n" +
+                                "2. Nhập Mật khẩu hợp lệ\n" +
+                                "3. Nhấn nút 'Đăng nhập'",
+                        TestData = "Email: hangt7708.gmail.com\n" +
+                                   "Mật khẩu: User1234@",
+                        ExpectedResult = "3. Hiển thị thông báo lỗi \"Vui lòng nhập đúng định dạng email.\"",
+                        ExecuteAction = (tc) =>
+                        {
+                            var test = new LoginTests();
+                            try
+                            {
+                                test.Setup();
+                                test.Login_InvalidEmailFormat();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = $"{ex.Message}";
+                            }
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "LI-3",
+                        TestName = "Đăng nhập không thành công khi nhập mật khẩu không hợp lệ",
+                        Steps = "1. Nhập Email hợp lệ\n" +
+                                "2. Nhập Mật khẩu không hợp lệ\n" +
+                                "3. Nhấn nút 'Đăng nhập'",
+                        TestData = "Email: hangt7708@gmail.com\n" +
+                                   "Mật khẩu: user123",
+                        ExpectedResult = "3. Hiển thị thông báo lỗi \"Mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ hoa, chữ thường và số.\"",
+                        ExecuteAction = (tc) =>
+                        {
+                            var test = new LoginTests();
+                            try
+                            {
+                                test.Setup();
+                                test.Login_InvalidPasswordFormat();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = $"Fail";
+                                test.CleanUp();
+                            }
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "LI-4",
                         TestName = "Đăng nhập không thành công khi nhập sai Email",
                         Steps = "1. Nhập sai Email và nhập Mật khẩu hợp lệ\n" +
                                 "2. Nhấn nút 'Đăng nhập'",
@@ -89,7 +142,7 @@ namespace EkkaWebAutoTest.UI.Views
                     },
                     new TestCase
                     {
-                        STT = "LI-3",
+                        STT = "LI-5",
                         TestName = "Đăng nhập không thành công khi nhập sai Mật khẩu",
                         Steps = "1. Nhập Email hợp lệ và nhập sai Mật khẩu\n" +
                                 "2. Nhấn nút 'Đăng nhập'",
@@ -114,7 +167,7 @@ namespace EkkaWebAutoTest.UI.Views
                     },
                     new TestCase
                     {
-                        STT = "LI-4",
+                        STT = "LI-6",
                         TestName = "Đăng nhập không thành công khi không nhập Email",
                         Steps = "1. Để trống trường Email và nhập trường Mật khẩu\n" +
                                 "2. Nhấn nút 'Đăng nhập'",
@@ -139,7 +192,7 @@ namespace EkkaWebAutoTest.UI.Views
                     },
                     new TestCase
                     {
-                        STT = "LI-5",
+                        STT = "LI-7",
                         TestName = "Đăng nhập không thành công khi không nhập Mật khẩu",
                         Steps = "1. Nhập trường Email và để trống trường Mật khẩu\n" +
                                 "2. Nhấn nút 'Đăng nhập'",
