@@ -61,7 +61,7 @@ CanUserAddRows="False" IsReadOnly="True" ItemsSource="{Binding}">
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTemplateColumn Header="Tiền điều kiện" Width="2*">
+                <DataGridTemplateColumn Header="Tiền điều kiện" Width="1.2*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding Precondition}" Style="{StaticResource WrappedTextStyle}" />

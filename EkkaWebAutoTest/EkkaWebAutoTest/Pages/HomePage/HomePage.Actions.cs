@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace EkkaWebAutoTest.Pages.HomePage
 {
@@ -27,6 +28,13 @@ namespace EkkaWebAutoTest.Pages.HomePage
             Thread.Sleep(WaitTimes.Default);
             ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", element);
             Thread.Sleep(WaitTimes.Default);
+        }
+
+        public void ClickOnCart()
+        {
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", CartButton);
+            Thread.Sleep(WaitTimes.Default);
+
         }
     }
 }

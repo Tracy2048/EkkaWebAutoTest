@@ -95,7 +95,7 @@ namespace EkkaWebAutoTest.UI.Views
                 };
 
                 // Lưu testCases vào Application.Current
-                Application.Current.Properties["AccountTestCases"] = testCases;
+                Application.Current.Properties["OrderHistoryTestCases"] = testCases;
             }
 
             OrderHistoryTCsGrid.ItemsSource = testCases;
