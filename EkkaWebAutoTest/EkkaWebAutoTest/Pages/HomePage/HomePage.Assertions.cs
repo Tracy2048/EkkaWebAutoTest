@@ -8,5 +8,9 @@ namespace EkkaWebAutoTest.Pages.HomePage
 {
     public partial class HomePage
     {
+        public void AssertOnLoginPage()
+        {
+            Assert.That(_driver.Url, Is.EqualTo("http://localhost/ecommerce/login"));
+        }
     }
 }

@@ -132,3 +132,7 @@ D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\obj\Debug\net8.0-windows\V
 D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\obj\Debug\net8.0-windows\Views\ProductSearchView.g.cs
 D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\obj\Debug\net8.0-windows\Views\OrderHistoryView.baml
 D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\obj\Debug\net8.0-windows\Views\ProductSearchView.baml
+D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\obj\Debug\net8.0-windows\Views\ReportView.g.cs
+D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\obj\Debug\net8.0-windows\Views\ReportView.baml
+D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\bin\Debug\net8.0-windows\LiveCharts.dll
+D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll

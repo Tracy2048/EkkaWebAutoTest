@@ -45,20 +45,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "1. Điều hướng đến trang đăng nhập",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Fail";
-
-                            //var test = new CartTests();
-                            //try
-                            //{
-                            //    test.Setup();
-                            //    test.ViewAccount_Success();
-                            //    test.CleanUp();
-                            //    tc.Result = "Pass";
-                            //}
-                            //catch (Exception ex)
-                            //{
-                            //    tc.Result = $"{ex.Message}";
-                            //}
+                            var test = new CartTests();
+                            try
+                            {
+                                test.Setup();
+                                test.Cart_Without_Login();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                     new TestCase
@@ -72,20 +71,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "2. Hiển thị ra cửa sổ xem giỏ hàng và hiển thị chữ \"Chưa có sản phẩm.\"",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Fail";
-
-                            //var test = new CartTests();
-                            //try
-                            //{
-                            //    test.Setup();
-                            //    test.ViewAccount_Success();
-                            //    test.CleanUp();
-                            //    tc.Result = "Pass";
-                            //}
-                            //catch (Exception ex)
-                            //{
-                            //    tc.Result = $"{ex.Message}";
-                            //}
+                            var test = new CartTests();
+                            try
+                            {
+                                test.Setup();
+                                test.Cart_Empty();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                     new TestCase
@@ -98,7 +96,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "2. Điều hướng đến trang đăng nhập",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Fail";
+                            var test = new CartTests();
+                            try
+                            {
+                                test.Setup();
+                                test.AddProduct_Without_Login();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                     new TestCase
@@ -148,7 +158,7 @@ namespace EkkaWebAutoTest.UI.Views
                     new TestCase
                     {
                         STT = "CM-7",
-                        TestName = "Thêm sản phẩm không thành công khi vượt quá số lượng của sản phẩm",
+                        TestName = "Thêm sản phẩm không thành công khi vượt quá số lượng tồn kho",
                         Precondition = "User đã đăng nhập",
                         Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
                                 "2. Nhấn vào sản phẩm, nhập số lượng\n" +
@@ -176,7 +186,119 @@ namespace EkkaWebAutoTest.UI.Views
                     new TestCase
                     {
                         STT = "CM-9",
-                        TestName = "Xem giỏ hàng thành công khi giỏ hàng có sản phẩm",
+                        TestName = "Tăng số lượng sản phẩm trong giỏ hàng bằng nút mũi tên",
+                        Precondition = "User đã đăng nhập",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn vào biểu tượng giỏ hàng\n" +
+                                "3. Nhấn nút mũi tên tăng",
+                        ExpectedResult = "3. Tăng số lượng sản phẩm và cập nhật lại tổng giá sản phẩm",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Pass";
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "CM-10",
+                        TestName = "Tăng số lượng sản phẩm vượt quá tồn kho",
+                        Precondition = "User đã đăng nhập",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn vào biểu tượng giỏ hàng\n" +
+                                "3. Nhấn nút mũi tên tăng",
+                        ExpectedResult = "3. Hiển thị thông báo \"Vui lòng kiểm tra lại số lượng.\"",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Pass";
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "CM-11",
+                        TestName = "Giảm số lượng sản phẩm trong giỏ hàng bằng nút mũi tên",
+                        Precondition = "User đã đăng nhập",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn vào biểu tượng giỏ hàng\n" +
+                                "3. Nhấn nút mũi tên giảm",
+                        ExpectedResult = "3. Giảm số lượng sản phẩm và cập nhật lại tổng giá sản phẩm",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Pass";
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "CM-12",
+                        TestName = "Giảm số lượng sản phẩm đến 1 và tiếp tục giảm",
+                        Precondition = "User đã đăng nhập",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn vào biểu tượng giỏ hàng\n" +
+                                "3. Nhấn nút mũi tên giảm",
+                        ExpectedResult = "3. Hiển thị thông báo \"Vui lòng kiểm tra lại số lượng.\"",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Pass";
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "CM-13",
+                        TestName = "Nhập số lượng trực tiếp vào ô nhập liệu",
+                        Precondition = "User đã đăng nhập",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn vào biểu tượng giỏ hàng\n" +
+                                "3. Nhập số lượng sản phẩm",
+                        ExpectedResult = "3. Cập nhật số lượng và tổng giá sản phẩm",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Fail";
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "CM-14",
+                        TestName = "Nhập số lượng vượt quá tồn kho hoặc nhỏ hơn 1 vào ô nhập liệu",
+                        Precondition = "User đã đăng nhập",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn vào biểu tượng giỏ hàng\n" +
+                                "3. Nhập số lượng sản phẩm",
+                        ExpectedResult = "3. Hiển thị thông báo \"Vui lòng kiểm tra lại số lượng.\"",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Fail";
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "CM-15",
+                        TestName = "Nhập kí tự không phải số vào ô nhập liệu",
+                        Precondition = "User đã đăng nhập",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn vào biểu tượng giỏ hàng\n" +
+                                "3. Nhập số lượng sản phẩm",
+                        ExpectedResult = "3. Hiển thị thông báo \"Vui lòng nhập số hợp lệ.\"",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Fail";
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "CM-16",
+                        TestName = "Xóa sản phẩm khỏi giỏ hàng thành công",
+                        Precondition = "User đã đăng nhập",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn vào biểu tượng giỏ hàng\n" +
+                                "3. Nhấn vào biểu tượng thùng rác cạnh sản phẩm muốn xóa",
+                        ExpectedResult = "3. Sản phẩm bị xóa khỏi giỏ hàng",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Pass";
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "CM-17",
+                        TestName = "Xem giỏ hàng thành công khi giỏ hàng có nhiều sản phẩm",
                         Precondition = "User đã đăng nhập",
                         Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
                                 "2. Nhấn vào biểu tượng giỏ hàng\n",

@@ -12,5 +12,6 @@ namespace EkkaWebAutoTest.Pages.ProductPage
         {
             Assert.That(NameProduct.Text.ToLower(), Is.EqualTo(name.ToLower()));
         }
+
     }
 }

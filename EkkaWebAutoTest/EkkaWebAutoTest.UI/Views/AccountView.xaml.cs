@@ -60,8 +60,6 @@ namespace EkkaWebAutoTest.UI.Views
                             }
                         }
                     },
-
-
                 };
 
                 // Lưu testCases vào Application.Current

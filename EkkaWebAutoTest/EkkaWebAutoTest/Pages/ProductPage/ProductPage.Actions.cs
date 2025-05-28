@@ -12,6 +12,13 @@ namespace EkkaWebAutoTest.Pages.ProductPage
         private IWebDriver _driver;
 
         public ProductPage(IWebDriver driver) => _driver = driver;
-
+        public void ClickTypeProduct(IWebElement element)
+        {
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", element);
+        }
+        public void ClickAddToCartButton()
+        {
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", AddToCartButton);
+        }
     }
 }

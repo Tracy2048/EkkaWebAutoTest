@@ -108,7 +108,7 @@ CanUserAddRows="False" IsReadOnly="True" ItemsSource="{Binding}">
                                                     <Setter Property="FontWeight" Value="Bold"/>
                                                     <Setter Property="FontSize" Value="16"/>
                                                 </DataTrigger>
-                                                <DataTrigger Binding="{Binding Result}" Value="FAIL">
+                                                <DataTrigger Binding="{Binding Result}" Value="Fail">
                                                     <Setter Property="Foreground" Value="Red"/>
                                                     <Setter Property="FontWeight" Value="Bold"/>
                                                     <Setter Property="FontSize" Value="16"/>

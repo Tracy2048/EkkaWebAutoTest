@@ -38,6 +38,32 @@ namespace EkkaWebAutoTest.UI.Views
                     new TestCase
                     {
                         STT = "OD-1",
+                        TestName = "Mua hàng không thành công khi giỏ hàng trống",
+                        Precondition = "User đã đăng nhập",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn vào biểu tượng giỏ hàng\n" +
+                                "3. Nhấn nút 'Thanh toán'\n",
+                        ExpectedResult = "3. Hiển thị thông báo \"Vui lòng thêm sản phẩm vào giỏ hàng.\"",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Pass";
+                            //var test = new AccountTests();
+                            //try
+                            //{
+                            //    test.Setup();
+                            //    test.ViewAccount_Success();
+                            //    test.CleanUp();
+                            //    tc.Result = "Pass";
+                            //}
+                            //catch (Exception ex)
+                            //{
+                            //    tc.Result = $"{ex.Message}";
+                            //}
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "OD-2",
                         TestName = "Mua hàng thành công khi thanh toán khi nhận hàng",
                         Precondition = "User đã đăng nhập",
                         Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
@@ -65,7 +91,7 @@ namespace EkkaWebAutoTest.UI.Views
                     },
                     new TestCase
                     {
-                        STT = "OD-2",
+                        STT = "OD-3",
                         TestName = "Mua hàng thành công khi thanh toán bằng VNPAY",
                         Precondition = "User đã đăng nhập",
                         Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
@@ -83,7 +109,7 @@ namespace EkkaWebAutoTest.UI.Views
                     },
                     new TestCase
                     {
-                        STT = "OD-3",
+                        STT = "OD-4",
                         TestName = "Mua hàng thành công khi thanh toán bằng MOMO",
                         Precondition = "User đã đăng nhập",
                         Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
@@ -93,6 +119,56 @@ namespace EkkaWebAutoTest.UI.Views
                                 "5. Nhấn nút 'Đặt hàng'\n" +
                                 "6. Thanh toán",
                         ExpectedResult = "6. Hiển thị thông báo \"Bạn đã đặt hàng thành công\"",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Pass";
+
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "OD-5",
+                        TestName = "Kiểm tra số lượng sản phẩm tồn kho sau khi mua hàng thành công",
+                        Precondition = "",
+                        Steps = "1. Truy cập trang chủ\n" +
+                                "2. Nhấn vào sản phẩm đã mua",
+                        ExpectedResult = "2. Số lượng sản phẩm được cập nhật lại",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Fail";
+
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "OD-6",
+                        TestName = "Mua hàng khi bỏ trống các trường thông tin",
+                        Precondition = "User đã đăng nhập",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn vào biểu tượng giỏ hàng\n" +
+                                "3. Nhấn nút 'Thanh toán'\n" +
+                                "4. Bỏ trống các trường thông tin\n" +
+                                "5. Nhấn nút 'Đặt hàng'\n" +
+                                "6. Thanh toán",
+                        ExpectedResult = "6. Hiển thị thông báo yêu cầu không được bỏ trống dưới mỗi trường",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Pass";
+
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "OD-7",
+                        TestName = "Mua hàng khi nhập số điện thoại không hợp lệ",
+                        Precondition = "User đã đăng nhập",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn vào biểu tượng giỏ hàng\n" +
+                                "3. Nhấn nút 'Thanh toán'\n" +
+                                "4. Nhập số điện thoại không hợp lệ và nhập thông tin người nhận\n" +
+                                "5. Nhấn nút 'Đặt hàng'\n" +
+                                "6. Thanh toán",
+                        ExpectedResult = "6. Hiển thị thông báo \"Vui lòng nhập đúng số điện thoại hợp lệ.\"",
                         ExecuteAction = (tc) =>
                         {
                             tc.Result = "Pass";

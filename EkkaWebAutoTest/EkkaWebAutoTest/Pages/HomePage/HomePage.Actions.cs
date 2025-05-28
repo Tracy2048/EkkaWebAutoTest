@@ -32,7 +32,10 @@ namespace EkkaWebAutoTest.Pages.HomePage
 
         public void ClickOnCart()
         {
-            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", CartButton);
+            //((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", CartIcon);
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", ViewCartButton);
+
+            //ViewCartButton.Click();
             Thread.Sleep(WaitTimes.Default);
 
         }

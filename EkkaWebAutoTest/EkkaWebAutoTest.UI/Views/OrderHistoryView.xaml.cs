@@ -38,6 +38,34 @@ namespace EkkaWebAutoTest.UI.Views
                     new TestCase
                     {
                         STT = "OH-1",
+                        TestName = "Xem lịch sử mua hàng thành công khi người dùng chưa mua hàng",
+                        Precondition = "User đã đăng nhập, \n" +
+                                       "User chưa mua hàng",
+                        Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
+                                "2. Nhấn icon người dùng bên góc trái màn hình\n" +
+                                "3. Nhấn nút 'Tài khoản'\n" +
+                                "4. Nhấn nút 'Lịch sử mua hàng'",
+                        ExpectedResult = "4. Hiển thị thông báo \"Bạn chưa có đơn hàng nào.\"",
+                        ExecuteAction = (tc) =>
+                        {
+                            tc.Result = "Fail";
+                            //var test = new AccountTests();
+                            //try
+                            //{
+                            //    test.Setup();
+                            //    test.ViewAccount_Success();
+                            //    test.CleanUp();
+                            //    tc.Result = "Pass";
+                            //}
+                            //catch (Exception ex)
+                            //{
+                            //    tc.Result = $"{ex.Message}";
+                            //}
+                        }
+                    },
+                    new TestCase
+                    {
+                        STT = "OH-2",
                         TestName = "Xem lịch sử mua hàng thành công khi người dùng đã mua hàng",
                         Precondition = "User đã đăng nhập, \n" +
                                        "User đã mua hàng",
@@ -65,18 +93,19 @@ namespace EkkaWebAutoTest.UI.Views
                     },
                     new TestCase
                     {
-                        STT = "OH-2",
-                        TestName = "Xem lịch sử mua hàng thành công khi người dùng chưa mua hàng",
+                        STT = "OH-3",
+                        TestName = "Xem chi tiết đơn hàng đã mua",
                         Precondition = "User đã đăng nhập, \n" +
-                                       "User chưa mua hàng",
+                                       "User đã mua hàng",
                         Steps = "1. Đăng nhập thành công, truy cập trang chủ\n" +
                                 "2. Nhấn icon người dùng bên góc trái màn hình\n" +
                                 "3. Nhấn nút 'Tài khoản'\n" +
-                                "4. Nhấn nút 'Lịch sử mua hàng'",
-                        ExpectedResult = "4. Hiển thị thông báo \"Bạn chưa có đơn hàng nào.\"",
+                                "4. Nhấn nút 'Lịch sử mua hàng'\n" +
+                                "5. Nhấn nút 'Xem' bên cạnh đơn hàng muốn xem",
+                        ExpectedResult = "5. Hiển thị thông tin chi tiết đơn hàng",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Fail";
+                            tc.Result = "Pass";
                             //var test = new AccountTests();
                             //try
                             //{

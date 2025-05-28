@@ -36,6 +36,7 @@ namespace EkkaWebAutoTest.UI
                 "OrderView" => new Views.OrderView(),
                 "ProductSearchView" => new Views.ProductSearchView(),
                 "OrderHistoryView" => new Views.OrderHistoryView(),
+                "ReportView" => new Views.ReportView(),
                 _ => null
             };
 

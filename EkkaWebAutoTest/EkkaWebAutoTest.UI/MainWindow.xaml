@@ -14,8 +14,10 @@
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderBrush" Value="Transparent"/>
             <Setter Property="Height" Value="40"/>
+            <Setter Property="Margin" Value="0,8"/>
         </Style>
     </Window.Resources>
+
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -43,8 +45,8 @@
                     Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
             <Button Content="Xem lịch sử mua hàng" Tag="OrderHistoryView" Click="Menu_Click"
                     Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
-            <!--<Button Content="Kiểm thử hàng loạt" Tag="BatchView" Click="Menu_Click"
-                    Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>-->
+            <Button Content="Báo cáo kiểm thử" Tag="ReportView" Click="Menu_Click"
+                    Background="Transparent" Foreground="White" BorderBrush="Transparent" Height="40"/>
         </StackPanel>
 
         <!-- Khu vực nội dung -->
