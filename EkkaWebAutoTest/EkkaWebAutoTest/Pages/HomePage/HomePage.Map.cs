@@ -20,6 +20,8 @@ namespace EkkaWebAutoTest.Pages.HomePage
         public IWebElement ViewCartButton => _driver.FindElement(By.XPath("//*[@id=\"ec-side-cart\"]/div/div[2]/div[2]/a[1]"));
 
         public IWebElement ProductInStock => _driver.FindElement(By.XPath("//*[@title=\"Fairycore Ladies' Mushroom & Vine Embroidery Suspenders Mid-length Skirt\"]"));
+        public IWebElement ProductInStock2 => _driver.FindElement(By.XPath("//*[@title=\"Goth 2023 New Arrival Women's Loafers, British Style Slip-On Flat Shoes For Women, Black\"]"));
+
         public IWebElement ProductOutStock => _driver.FindElement(By.XPath("//*[@title=\"1pc Plain Square Makeup Bag Black Friday\"]"));
 
         public IWebElement ProductRandom
@@ -34,5 +36,7 @@ namespace EkkaWebAutoTest.Pages.HomePage
                 return elements[randomIndex];
             }
         }
+        public IWebElement DeleteButton => _driver.FindElement(By.ClassName("remove"));
+
     }
 }

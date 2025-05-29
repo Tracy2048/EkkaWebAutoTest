@@ -13,7 +13,7 @@ namespace EkkaWebAutoTest.Pages.SignUpPage
         public void AssertSignUpSucess()
         {
             Assert.That(Message.Text, Is.EqualTo("Vui lòng xác nhận email để hoàn tất đăng ký."));
-            Thread.Sleep(WaitTimes.Default);
+            Thread.Sleep(WaitTimes.Short);
         }
         public void AssertExistingEmail()
         {

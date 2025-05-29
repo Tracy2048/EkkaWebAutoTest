@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using EkkaWebAutoTest.Constants;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,21 @@ namespace EkkaWebAutoTest.Pages.CartPage
     {
         private IWebDriver _driver;
         public CartPage(IWebDriver driver) => _driver = driver;
+        public void ClickIncreaseQuantityButton()
+        {
+            IncreaseQuantityButton.Click();
+            Thread.Sleep(WaitTimes.Short);
+        }
+        public void ClickDecreaseQuantityButton()
+        {
+            DecreaseQuantityButton.Click();
+            Thread.Sleep(WaitTimes.Short);
+        }
+        public void EnterQuantity(string quantity)
+        {
+            QuantityTextBox.Clear();
+            QuantityTextBox.SendKeys(quantity);
+            Thread.Sleep(WaitTimes.Short);
+        }
     }
 }

@@ -39,5 +39,10 @@ namespace EkkaWebAutoTest.Pages.HomePage
             Thread.Sleep(WaitTimes.Default);
 
         }
+
+        public void ClickDeleteButton()
+        {
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", DeleteButton);
+        }
     }
 }
