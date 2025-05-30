@@ -48,19 +48,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "4. Hiển thị thông báo \"Bạn chưa có đơn hàng nào.\"",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Fail";
-                            //var test = new AccountTests();
-                            //try
-                            //{
-                            //    test.Setup();
-                            //    test.ViewAccount_Success();
-                            //    test.CleanUp();
-                            //    tc.Result = "Pass";
-                            //}
-                            //catch (Exception ex)
-                            //{
-                            //    tc.Result = $"{ex.Message}";
-                            //}
+                            var test = new OrderHistoryTests();
+                            try
+                            {
+                                test.Setup();
+                                test.OrderHistory_Empty();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                     new TestCase
@@ -76,19 +76,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "4. Hiển thị danh sách các sản phẩm đã mua",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Pass";
-                            //var test = new AccountTests();
-                            //try
-                            //{
-                            //    test.Setup();
-                            //    test.ViewAccount_Success();
-                            //    test.CleanUp();
-                            //    tc.Result = "Pass";
-                            //}
-                            //catch (Exception ex)
-                            //{
-                            //    tc.Result = $"{ex.Message}";
-                            //}
+                            var test = new OrderHistoryTests();
+                            try
+                            {
+                                test.Setup();
+                                test.OrderHistory_HasOrders();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                     new TestCase
@@ -105,19 +105,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "5. Hiển thị thông tin chi tiết đơn hàng",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Pass";
-                            //var test = new AccountTests();
-                            //try
-                            //{
-                            //    test.Setup();
-                            //    test.ViewAccount_Success();
-                            //    test.CleanUp();
-                            //    tc.Result = "Pass";
-                            //}
-                            //catch (Exception ex)
-                            //{
-                            //    tc.Result = $"{ex.Message}";
-                            //}
+                            var test = new OrderHistoryTests();
+                            try
+                            {
+                                test.Setup();
+                                test.OrderHistory_OrderDetails();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
 

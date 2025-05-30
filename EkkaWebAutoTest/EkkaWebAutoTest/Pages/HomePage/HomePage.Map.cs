@@ -10,19 +10,15 @@ namespace EkkaWebAutoTest.Pages.HomePage
     public partial class HomePage
     {
         public IWebElement UserButton => _driver.FindElements(By.CssSelector(".ec-header-user > button.dropdown-toggle")).FirstOrDefault(b => b.Displayed && b.Enabled);
-
         public IWebElement AccountButton => _driver.FindElement(By.XPath("/html/body/div[2]/header/div[1]/div/div/div[3]/div/div/ul/li[1]/a"));
-
         public IWebElement LogoutButton => _driver.FindElement(By.XPath("/html/body/div[2]/header/div[1]/div/div/div[3]/div/div/ul/li[3]/a"));
-
         public IWebElement CartIcon => _driver.FindElement(By.ClassName("fi-rr-shopping-bag"));
-
         public IWebElement ViewCartButton => _driver.FindElement(By.XPath("//*[@id=\"ec-side-cart\"]/div/div[2]/div[2]/a[1]"));
-
         public IWebElement ProductInStock => _driver.FindElement(By.XPath("//*[@title=\"Fairycore Ladies' Mushroom & Vine Embroidery Suspenders Mid-length Skirt\"]"));
         public IWebElement ProductInStock2 => _driver.FindElement(By.XPath("//*[@title=\"Goth 2023 New Arrival Women's Loafers, British Style Slip-On Flat Shoes For Women, Black\"]"));
-
         public IWebElement ProductOutStock => _driver.FindElement(By.XPath("//*[@title=\"1pc Plain Square Makeup Bag Black Friday\"]"));
+        //Search product bar
+        public IWebElement SearchTextBox => _driver.FindElement(By.Name("search"));
 
         public IWebElement ProductRandom
         {

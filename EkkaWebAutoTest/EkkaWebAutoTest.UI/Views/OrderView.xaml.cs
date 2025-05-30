@@ -46,19 +46,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "3. Hiển thị thông báo \"Vui lòng thêm sản phẩm vào giỏ hàng.\"",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Pass";
-                            //var test = new AccountTests();
-                            //try
-                            //{
-                            //    test.Setup();
-                            //    test.ViewAccount_Success();
-                            //    test.CleanUp();
-                            //    tc.Result = "Pass";
-                            //}
-                            //catch (Exception ex)
-                            //{
-                            //    tc.Result = $"{ex.Message}";
-                            //}
+                            var test = new OrderTests();
+                            try
+                            {
+                                test.Setup();
+                                test.Order_CartEmpty();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                     new TestCase
@@ -74,19 +74,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "5. Hiển thị thông báo \"Bạn đã đặt hàng thành công\"",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Pass";
-                            //var test = new AccountTests();
-                            //try
-                            //{
-                            //    test.Setup();
-                            //    test.ViewAccount_Success();
-                            //    test.CleanUp();
-                            //    tc.Result = "Pass";
-                            //}
-                            //catch (Exception ex)
-                            //{
-                            //    tc.Result = $"{ex.Message}";
-                            //}
+                            var test = new OrderTests();
+                            try
+                            {
+                                test.Setup();
+                                test.Order_COD();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                     new TestCase
@@ -103,8 +103,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "6. Hiển thị thông báo \"Bạn đã đặt hàng thành công\"",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Pass";
-                            
+                            var test = new OrderTests();
+                            try
+                            {
+                                test.Setup();
+                                test.Order_VNPAY();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                     new TestCase
@@ -121,8 +132,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "6. Hiển thị thông báo \"Bạn đã đặt hàng thành công\"",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Pass";
-
+                            var test = new OrderTests();
+                            try
+                            {
+                                test.Setup();
+                                test.Order_MOMO();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                     new TestCase
@@ -135,8 +157,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "2. Số lượng sản phẩm được cập nhật lại",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Fail";
-
+                            var test = new OrderTests();
+                            try
+                            {
+                                test.Setup();
+                                test.CheckQuantity_AfterOrder();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                     new TestCase
@@ -153,8 +186,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "6. Hiển thị thông báo yêu cầu không được bỏ trống dưới mỗi trường",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Pass";
-
+                            var test = new OrderTests();
+                            try
+                            {
+                                test.Setup();
+                                test.Order_EmptyInfo();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                     new TestCase
@@ -171,8 +215,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "6. Hiển thị thông báo \"Vui lòng nhập đúng số điện thoại hợp lệ.\"",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Pass";
-
+                            var test = new OrderTests();
+                            try
+                            {
+                                test.Setup();
+                                test.Order_InvalidPhone();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                 };

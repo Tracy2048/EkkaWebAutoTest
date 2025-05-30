@@ -11,5 +11,7 @@ namespace EkkaWebAutoTest.Pages.AccountPage
     {
         public IWebElement Name => _driver.FindElement(By.ClassName("name"));
         public IWebElement Email => _driver.FindElement(By.XPath("/html/body/div[2]/main/section/div/div/div[2]/div/div/div/div/div/div[2]/div[1]/div/ul/li[1]"));
+        public IWebElement ViewOrderHistoryButton => _driver.FindElement(By.XPath("//a[@href='my-order']"));
+        public IWebElement ViewOrderDetailsButton => _driver.FindElement(By.XPath("/html/body/div[2]/main/section/div/div/div[2]/div/div[2]/div/table/tbody/tr/td[5]/span/a"));
     }
 }

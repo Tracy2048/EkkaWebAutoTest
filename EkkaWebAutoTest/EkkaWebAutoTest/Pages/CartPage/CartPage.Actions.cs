@@ -28,5 +28,12 @@ namespace EkkaWebAutoTest.Pages.CartPage
             QuantityTextBox.SendKeys(quantity);
             Thread.Sleep(WaitTimes.Short);
         }
+
+        public void ClickCheckoutButton()
+        {
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].scrollIntoView(true);", CheckoutButton);
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", CheckoutButton);
+            Thread.Sleep(WaitTimes.Short);
+        }
     }
 }

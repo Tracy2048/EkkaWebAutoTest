@@ -13,13 +13,17 @@ namespace EkkaWebAutoTest.Constants
         {
             name = "Hang",
             email = "hangt7708@gmail.com",
-            password = "User1234@"
+            password = "User1234@",
+            phone = "0834561567",
+            address = "298 Cau Dien, Bac Tu Liem, Hanoi, Vietnam",
         };
         public static Account Account2 = new Account
         {
             name = "Tracy",
             email = "tranhang2048@gmail.com",
-            password = "User1234#"
+            password = "User1234#",
+            phone = "0834561567",
+            address = "298 Cau Dien, Bac Tu Liem, Hanoi, Vietnam",
         };
     }
 }

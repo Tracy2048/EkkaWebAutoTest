@@ -40,6 +40,15 @@ namespace EkkaWebAutoTest.Pages.HomePage
 
         }
 
+        public void SearchProduct(string productName)
+        {
+            SearchTextBox.Clear();
+            SearchTextBox.SendKeys(productName);
+            Thread.Sleep(WaitTimes.Default);
+            SearchTextBox.SendKeys(Keys.Enter);
+            Thread.Sleep(WaitTimes.Default);
+        }
+
         public void ClickDeleteButton()
         {
             ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", DeleteButton);

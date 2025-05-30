@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using EkkaWebAutoTest.Constants;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,15 @@ namespace EkkaWebAutoTest.Pages.AccountPage
         //{
         //    _driver.Navigate().GoToUrl(Url);
         //}
+        public void ClickViewOrderHistoryButton()
+        {
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", ViewOrderHistoryButton);
+            Thread.Sleep(WaitTimes.Default);
+        }
+        public void ClickViewOrderDetailsButton()
+        {
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", ViewOrderDetailsButton);
+            Thread.Sleep(WaitTimes.Short);
+        }
     }
 }

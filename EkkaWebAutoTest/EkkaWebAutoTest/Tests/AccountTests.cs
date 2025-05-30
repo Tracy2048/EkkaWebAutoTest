@@ -41,7 +41,6 @@ namespace EkkaWebAutoTest.Tests
         {
             _loginPage.Open();
             _loginPage.Login("hangt7708@gmail.com", "User1234@");
-            Thread.Sleep(WaitTimes.Default);
 
             _homePage = new HomePage(_driver);
             _homePage.UserButton.Click();

@@ -46,19 +46,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "3. Hiển thị danh sách các sản phẩm có thông tin phù hợp",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Pass";
-                            //var test = new LoginTests();
-                            //try
-                            //{
-                            //    test.Setup();
-                            //    test.Login_Success();
-                            //    test.CleanUp();
-                            //    tc.Result = "Pass";
-                            //}
-                            //catch (Exception ex)
-                            //{
-                            //    tc.Result = $"{ex.Message}";
-                            //}
+                            var test = new ProductSearchTests();
+                            try
+                            {
+                                test.Setup();
+                                test.SearchProduct_Success();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                     new TestCase
@@ -72,7 +72,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "3. Hiển thị thông báo \"Không có sản phẩm phù hợp.\"",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Fail";
+                            var test = new ProductSearchTests();
+                            try
+                            {
+                                test.Setup();
+                                test.SearchProduct_NotFound();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                     new TestCase
@@ -86,7 +98,19 @@ namespace EkkaWebAutoTest.UI.Views
                         ExpectedResult = "3. Hiển thị toàn bộ sản phẩm",
                         ExecuteAction = (tc) =>
                         {
-                            tc.Result = "Pass";
+                            var test = new ProductSearchTests();
+                            try
+                            {
+                                test.Setup();
+                                test.SearchProduct_EmptyField();
+                                test.CleanUp();
+                                tc.Result = "Pass";
+                            }
+                            catch (Exception ex)
+                            {
+                                tc.Result = "Fail";
+                                test.CleanUp();
+                            }
                         }
                     },
                 };

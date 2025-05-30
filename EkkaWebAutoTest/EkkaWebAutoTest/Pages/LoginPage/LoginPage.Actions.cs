@@ -33,6 +33,7 @@ namespace EkkaWebAutoTest.Pages.LoginPage
 
             // Click bằng JavaScript
             ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", LoginButton);
+            Thread.Sleep(WaitTimes.Default);
         }
     }
 }
