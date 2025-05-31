@@ -11,7 +11,7 @@ namespace EkkaWebAutoTest.Constants
     {
         public static Account Account1 = new Account
         {
-            name = "Hang",
+            name = "Trần Hằng",
             email = "hangt7708@gmail.com",
             password = "User1234@",
             phone = "0834561567",

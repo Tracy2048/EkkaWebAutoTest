@@ -1,5 +1,6 @@
 ﻿using EkkaWebAutoTest.Constants;
 using EkkaWebAutoTest.Pages.CartPage;
+using EkkaWebAutoTest.Pages.CheckoutPage;
 using EkkaWebAutoTest.Pages.HomePage;
 using EkkaWebAutoTest.Pages.LoginPage;
 using EkkaWebAutoTest.Pages.OrderPage;
@@ -22,6 +23,7 @@ namespace EkkaWebAutoTest.Tests
         private ProductPage _productPage;
         private CartPage _cartPage;
         private OrderPage _orderPage;
+        private CheckoutPage _checkoutPage;
 
         [SetUp]
         public void Setup()
@@ -34,6 +36,7 @@ namespace EkkaWebAutoTest.Tests
             _productPage = new ProductPage(_driver);
             _cartPage = new CartPage(_driver);
             _orderPage = new OrderPage(_driver);
+            _checkoutPage = new CheckoutPage(_driver);
         }
 
         [TearDown]
@@ -80,7 +83,8 @@ namespace EkkaWebAutoTest.Tests
             _cartPage.ClickCheckoutButton();
             _orderPage.Order(AccountStore.Account1.name, AccountStore.Account1.phone,
                              AccountStore.Account1.address, _orderPage.VNPAY_Radio);
-            //_orderPage.AssertOrderSuccess();
+            _checkoutPage.CheckoutWithNCB();
+            _orderPage.AssertOrderSuccess();
         }
 
         [Test]
@@ -95,7 +99,8 @@ namespace EkkaWebAutoTest.Tests
             _cartPage.ClickCheckoutButton();
             _orderPage.Order(AccountStore.Account1.name, AccountStore.Account1.phone,
                              AccountStore.Account1.address, _orderPage.MOMO_Radio);
-            //_orderPage.AssertOrderSuccess();
+            _checkoutPage.CheckoutWithMOMO();
+            _orderPage.AssertOrderSuccess();
         }
 
         [Test]
