@@ -136,3 +136,4 @@ D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\obj\Debug\net8.0-windows\V
 D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\obj\Debug\net8.0-windows\Views\ReportView.baml
 D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\bin\Debug\net8.0-windows\LiveCharts.dll
 D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
+D:\EkkaWebAutoTest\EkkaWebAutoTest\EkkaWebAutoTest.UI\bin\Debug\net8.0-windows\CommunityToolkit.Mvvm.dll

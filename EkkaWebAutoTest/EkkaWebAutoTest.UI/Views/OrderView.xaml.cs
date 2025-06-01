@@ -57,6 +57,7 @@ namespace EkkaWebAutoTest.UI.Views
                             catch (Exception ex)
                             {
                                 tc.Result = "Fail";
+                                tc.ErrorMessage = ex.Message;
                                 test.CleanUp();
                             }
                         }
@@ -85,6 +86,7 @@ namespace EkkaWebAutoTest.UI.Views
                             catch (Exception ex)
                             {
                                 tc.Result = "Fail";
+                                tc.ErrorMessage = ex.Message;
                                 test.CleanUp();
                             }
                         }
@@ -114,6 +116,7 @@ namespace EkkaWebAutoTest.UI.Views
                             catch (Exception ex)
                             {
                                 tc.Result = "Fail";
+                                tc.ErrorMessage = ex.Message;
                                 test.CleanUp();
                             }
                         }
@@ -143,6 +146,7 @@ namespace EkkaWebAutoTest.UI.Views
                             catch (Exception ex)
                             {
                                 tc.Result = "Fail";
+                                tc.ErrorMessage = ex.Message;
                                 test.CleanUp();
                             }
                         }
@@ -168,6 +172,7 @@ namespace EkkaWebAutoTest.UI.Views
                             catch (Exception ex)
                             {
                                 tc.Result = "Fail";
+                                tc.ErrorMessage = ex.Message;
                                 test.CleanUp();
                             }
                         }
@@ -197,6 +202,7 @@ namespace EkkaWebAutoTest.UI.Views
                             catch (Exception ex)
                             {
                                 tc.Result = "Fail";
+                                tc.ErrorMessage = ex.Message;
                                 test.CleanUp();
                             }
                         }
@@ -226,6 +232,7 @@ namespace EkkaWebAutoTest.UI.Views
                             catch (Exception ex)
                             {
                                 tc.Result = "Fail";
+                                tc.ErrorMessage = ex.Message;
                                 test.CleanUp();
                             }
                         }

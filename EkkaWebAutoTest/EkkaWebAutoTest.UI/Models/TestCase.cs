@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EkkaWebAutoTest.UI.Models
 {
-    public class TestCase
+    public class TestCase 
     {
         public string FunctionName { get; set; }
         public string STT { get; set; }
@@ -17,5 +17,7 @@ namespace EkkaWebAutoTest.UI.Models
         public string ExpectedResult { get; set; }
         public string Result { get; set; }
         public Action<TestCase> ExecuteAction { get; set; }
+
+        public string ErrorMessage;
     }
 }

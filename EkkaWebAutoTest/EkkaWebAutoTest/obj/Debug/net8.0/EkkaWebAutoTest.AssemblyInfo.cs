@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EkkaWebAutoTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+291bfc34be5c1537466015c9f62f789f931e608d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b8c1f5aa75f9ce187eb08229497d08f16e164e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("EkkaWebAutoTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EkkaWebAutoTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

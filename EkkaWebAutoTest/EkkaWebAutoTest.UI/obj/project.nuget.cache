@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wS0cNj2CYEc=",
+  "dgSpecHash": "aNLATPxKwEA=",
   "success": true,
   "projectFilePath": "D:\\EkkaWebAutoTest\\EkkaWebAutoTest\\EkkaWebAutoTest.UI\\EkkaWebAutoTest.UI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hang\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\Hang\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\Hang\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\Hang\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",

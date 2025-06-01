@@ -76,7 +76,28 @@ namespace EkkaWebAutoTest.UI.Views
             {
                 if (Application.Current.Properties[key] is List<TestCase> testCases)
                 {
-                    string functionName = key.ToString().Replace("TestCases", "").Replace("TCs", "");
+                    var functionName = key.ToString().Replace("TestCases", "").Replace("TCs", "");
+
+                    var vietnameseNames = new Dictionary<string, string>
+                    {
+                        { "OrderHistory", "Xem lịch sử mua hàng" },
+                        { "ProductSearch", "Tìm kiếm sản phẩm" },
+                        { "SignUp", "Đăng ký" },
+                        { "Logout", "Đăng xuất" },
+                        { "Account", "Xem thông tin tài khoản" },
+                        { "Product", "Xem chi tiết sản phẩm" },
+                        { "Cart", "Quản lý giỏ hàng" },
+                        { "Order", "Mua hàng" },
+                        { "Login", "Đăng nhập" }
+                    };
+
+                    foreach (var pair in vietnameseNames.OrderByDescending(p => p.Key.Length))
+                    {
+                        if (functionName.Contains(pair.Key))
+                        {
+                            functionName = functionName.Replace(pair.Key, pair.Value);
+                        }
+                    }
 
                     int passed = testCases.Count(tc => tc.Result?.Trim().ToLower() == "pass");
                     int failed = testCases.Count(tc => tc.Result?.Trim().ToLower() == "fail");

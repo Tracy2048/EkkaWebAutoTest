@@ -92,7 +92,7 @@ CanUserAddRows="False" IsReadOnly="True" ItemsSource="{Binding}">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Grid>
-                                <TextBlock Text="{Binding Result}" 
+                                <TextBlock Text="{Binding Result}" ToolTip="{Binding ErrorMessage}"
                  HorizontalAlignment="Center" 
                  VerticalAlignment="Center">
                                     <TextBlock.Style>
