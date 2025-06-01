@@ -8,6 +8,7 @@ namespace EkkaWebAutoTest.UI.Models
 {
     public class TestCase
     {
+        public string FunctionName { get; set; }
         public string STT { get; set; }
         public string TestName { get; set; }
         public string Precondition { get; set; }

@@ -43,7 +43,7 @@ namespace EkkaWebAutoTest.Tests
         {
             _homePage.Open();
             _homePage.SearchProduct("glove");
-
+            _homePage.AssertSearchNotFound();
         }
 
         [Test]

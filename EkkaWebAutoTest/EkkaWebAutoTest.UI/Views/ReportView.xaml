@@ -81,7 +81,7 @@
 
         <!-- Các nút bên dưới bảng -->
         <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,20,0,0">
-            <Button  Tag="{Binding}"
+            <Button  Tag="{Binding}" Click="RunAllTestCases_Click"
                 Width="120" Height="35"
                 Padding="10,5" Margin="5"
                 Background="#2196F3" Foreground="White"

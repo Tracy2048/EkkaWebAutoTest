@@ -53,5 +53,7 @@ namespace EkkaWebAutoTest.Pages.HomePage
         {
             ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", DeleteButton);
         }
+
+        
     }
 }

@@ -8,9 +8,9 @@ namespace EkkaWebAutoTest.Constants
 {
     public static class WaitTimes
     {
-        public const int Default = 2000;
+        public const int Default = 300;
         public const int Long = 5000;
-        public const int Short = 500;
+        public const int Short = 200;
     }
 
 }

@@ -46,6 +46,7 @@ namespace EkkaWebAutoTest.Tests
             Thread.Sleep(WaitTimes.Default);
             ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", _homePage.AccountButton);
             _accountPage.ClickViewOrderHistoryButton();
+            _accountPage.AssertOrderHistoryEmpty();
         }
 
         [Test]

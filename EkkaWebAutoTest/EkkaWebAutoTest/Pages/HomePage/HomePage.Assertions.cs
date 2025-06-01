@@ -12,5 +12,9 @@ namespace EkkaWebAutoTest.Pages.HomePage
         {
             Assert.That(_driver.Url, Is.EqualTo("http://localhost/ecommerce/login"));
         }
+        public void AssertSearchNotFound()
+        {
+            Assert.That(message, Is.EqualTo("Không có sản phẩm phù hợp."), "Không thông báo");
+        }
     }
 }

@@ -20,5 +20,10 @@ namespace EkkaWebAutoTest.Pages.CartPage
         {
             Assert.That(message, Is.EqualTo("Vui lòng nhập số hợp lệ."), "Không thông báo");
         }
+        public void AssertCartEmpty()
+        {
+            Assert.That(message, Is.EqualTo("Chưa có sản phẩm."), "Không thông báo");
+
+        }
     }
 }

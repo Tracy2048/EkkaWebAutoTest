@@ -16,6 +16,17 @@ namespace EkkaWebAutoTest.UI
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly Views.LoginView loginView = new();
+        private readonly Views.SignUpView signUpView = new();
+        private readonly Views.LogoutView logoutView = new();
+        private readonly Views.AccountView accountView = new();
+        private readonly Views.ProductView productView = new();
+        private readonly Views.CartView cartView = new();
+        private readonly Views.OrderView orderView = new();
+        private readonly Views.ProductSearchView productSearchView = new();
+        private readonly Views.OrderHistoryView orderHistoryView = new();
+        private readonly Views.ReportView reportView = new();
+
         public MainWindow()
         {
             InitializeComponent();

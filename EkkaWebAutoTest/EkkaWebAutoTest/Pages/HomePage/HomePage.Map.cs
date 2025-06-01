@@ -33,6 +33,7 @@ namespace EkkaWebAutoTest.Pages.HomePage
             }
         }
         public IWebElement DeleteButton => _driver.FindElement(By.ClassName("remove"));
+        public string message = "";
 
     }
 }

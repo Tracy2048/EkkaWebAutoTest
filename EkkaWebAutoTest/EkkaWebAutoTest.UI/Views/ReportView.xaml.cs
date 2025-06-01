@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Runtime.InteropServices;
+using EkkaWebAutoTest.UI.Models;
 
 namespace EkkaWebAutoTest.UI.Views
 {
@@ -30,6 +31,35 @@ namespace EkkaWebAutoTest.UI.Views
             LoadSummaryData();
         }
         // Mô hình dữ liệu cho từng chức năng
+
+        private void RunAllTestCases_Click(object sender, RoutedEventArgs e)
+        {
+            // Duyệt qua tất cả cặp key-value trong Application.Current.Properties
+            foreach (var key in Application.Current.Properties.Keys)
+            {
+                if (Application.Current.Properties[key] is List<TestCase> testCases)
+                {
+                    foreach (var testCase in testCases)
+                    {
+                        try
+                        {
+                            testCase.ExecuteAction?.Invoke(testCase);
+                        }
+                        catch (Exception ex)
+                        {
+                            testCase.Result = "Fail";
+                        }
+                    }
+                }
+            }
+            LoadSummaryData();
+            // Nếu bạn biết các UserControl đang hiển thị, gọi Items.Refresh() nếu cần
+            // Ví dụ:
+            //AccountTCsGrid?.Items.Refresh();
+            //ProductTCsGrid?.Items.Refresh();
+            //CartTCsGrid?.Items.Refresh();
+        }
+
         public class FunctionReport
         {
             public string FunctionName { get; set; }
@@ -40,24 +70,28 @@ namespace EkkaWebAutoTest.UI.Views
 
         private void LoadSummaryData()
         {
-            var functionReports = new List<FunctionReport>
-    {
-        new FunctionReport { FunctionName = "Đăng nhập", Passed = 6, Failed = 1 },
-        new FunctionReport { FunctionName = "Đăng ký", Passed = 6, Failed = 1 },
-        new FunctionReport { FunctionName = "Đăng xuất", Passed = 1, Failed = 0 },
-        new FunctionReport { FunctionName = "Xem thông tin tài khoản", Passed = 1, Failed = 0 },
-        new FunctionReport { FunctionName = "Xem chi tiết sản phẩm", Passed = 2, Failed = 0 },
-        new FunctionReport { FunctionName = "Quản lý giỏ hàng", Passed = 10, Failed = 7 },
-        new FunctionReport { FunctionName = "Mua hàng", Passed = 6, Failed = 1 },
-        new FunctionReport { FunctionName = "Tìm kiếm sản phẩm", Passed = 2, Failed = 1 },
-        new FunctionReport { FunctionName = "Xem lịch sử mua hàng", Passed = 2, Failed = 1 },
+            var functionReports = new List<FunctionReport>();
 
+            foreach (var key in Application.Current.Properties.Keys)
+            {
+                if (Application.Current.Properties[key] is List<TestCase> testCases)
+                {
+                    string functionName = key.ToString().Replace("TestCases", "").Replace("TCs", "");
 
-    };
+                    int passed = testCases.Count(tc => tc.Result?.Trim().ToLower() == "pass");
+                    int failed = testCases.Count(tc => tc.Result?.Trim().ToLower() == "fail");
+
+                    functionReports.Add(new FunctionReport
+                    {
+                        FunctionName = functionName,
+                        Passed = passed,
+                        Failed = failed
+                    });
+                }
+            }
 
             int totalPassed = functionReports.Sum(f => f.Passed);
             int totalFailed = functionReports.Sum(f => f.Failed);
-            int total = totalPassed + totalFailed;
 
             functionReports.Add(new FunctionReport
             {
@@ -67,8 +101,8 @@ namespace EkkaWebAutoTest.UI.Views
             });
 
             FunctionReportGrid.ItemsSource = functionReports;
+            FunctionReportGrid.Items.Refresh();
 
-            // Biểu đồ hình tròn – phần trăm
             PassFailPieChart.Series = new SeriesCollection
     {
         new PieSeries
@@ -76,24 +110,25 @@ namespace EkkaWebAutoTest.UI.Views
             Title = "Passed",
             Values = new ChartValues<int> { totalPassed },
             DataLabels = true,
-            LabelPoint = chartPoint =>
-                $"{chartPoint.Participation:P0}", // Phần trăm
-            Fill = System.Windows.Media.Brushes.Green
+            LabelPoint = chartPoint => $"{chartPoint.Y} ({chartPoint.Participation:P0})",
+            Fill = Brushes.Green
         },
         new PieSeries
         {
             Title = "Failed",
             Values = new ChartValues<int> { totalFailed },
             DataLabels = true,
-            LabelPoint = chartPoint =>
-                $"{chartPoint.Participation:P0}",
-            Fill = System.Windows.Media.Brushes.Red
+            LabelPoint = chartPoint => $"{chartPoint.Y} ({chartPoint.Participation:P0})",
+            Fill = Brushes.Red
         }
     };
         }
+
+
+
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-            string os = RuntimeInformation.OSDescription; 
+            string os = RuntimeInformation.OSDescription;
             string browser = "Google Chrome";
             EnvironmentText.Text = $"{os}, {browser}";
 

@@ -18,5 +18,7 @@ namespace EkkaWebAutoTest.Pages.CartPage
         public int total = 1;
 
         public string message = "";
+
+        
     }
 }

@@ -54,6 +54,7 @@ namespace EkkaWebAutoTest.Tests
             _loginPage.Open();
             _loginPage.Login(AccountStore.Account2.email, AccountStore.Account2.password);
             _homePage.ClickOnCart();
+            _cartPage.AssertCartEmpty();
         }
 
         [Test]
@@ -236,6 +237,7 @@ namespace EkkaWebAutoTest.Tests
             _homePage.ClickOnCart();
             _cartPage.DeleteIcon.Click();
             Thread.Sleep(WaitTimes.Short);
+            _cartPage.DeleteIcon.Click();
         }
     }
 }
